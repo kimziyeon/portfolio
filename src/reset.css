@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #3D3D3D;
+  width: 95%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+img {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/*칸사이 두줄을 한줄로*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* 
+reset.css(태그초기화)
+common.css(공통스타일)
+버튼, 아이콘
+
+common.css(초기화,공통스타일 -2개합침)
+헤더,풋터,버튼,아이콘,컴포넌트
+*/
