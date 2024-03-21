@@ -1,0 +1,43 @@
+{
+    "project": [
+        {
+            "id": 0,
+            "title": "서울특별시 홈페이지0",
+            "subtitle": "RESPONSIVE WEBSITE [PC, MOB]",
+            "detail": "프로젝트0 내용내용 프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용",
+            "work": "마크업 / 레이아웃 디자인",
+            "stack": "Figma / Html / Css / Javascript / json",
+            "gitUrl": "Http://ddddddddddddddd0.",
+            "webUrl": "Http://ddddddddddddddd0.",
+            "deployUrl": "https://dragon1431.github.io/teamA_hit/",
+            "img01": "/img/project/seoul_widow.png",
+            "img02": "/img/project/seoul_widow.png"
+        },
+        {
+            "id": 1,
+            "title": "서울특별시 홈페이지1",
+            "subtitle": "RESPONSIVE WEBSITE [PC, MOB]",
+            "detail": "프로젝트1 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용",
+            "work": "마크업 / 레이아웃 디자인",
+            "stack": "Figma / Html / Css / Javascript / json",
+            "giturl": "Http://ddddddddddddddd1.",
+            "weburl": "Http://ddddddddddddddd1.",
+            "deployurl": "https://dragon1431.github.io/teamA_hit/",
+            "img01": "/img/project/seoul_widow.png",
+            "img02": "/img/project/seoul_widow.png"
+        },
+        {
+            "id": 2,
+            "title": "서울특별시 홈페이지2",
+            "subtitle": "RESPONSIVE WEBSITE [PC, MOB]",
+            "detail": "프로젝트2 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용",
+            "work": "마크업 / 레이아웃 디자인",
+            "stack": "Figma / Html / Css / Javascript / json",
+            "giturl": "Http://ddddddddddddddd2.",
+            "weburl": "Http://ddddddddddddddd2.",
+            "deployurl": "https://dragon1431.github.io/teamA_hit/",
+            "img01": "/img/project/seoul_widow.png",
+            "img02": "/img/project/seoul_widow.png"
+        }
+    ]
+}

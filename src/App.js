@@ -3,6 +3,7 @@ import Home from './component/Home';
 import About from './component/About';
 import Project from './component/Project';
 import Contact from './component/Contact';
+import dataJson from './data/project.json';
 import './common.scss';
 import './App.css';
 
@@ -25,7 +26,7 @@ function App() {
       <main>
         <section className="home"><Home /></section>
         <section className="about"><About /></section>
-        <section className="project"><Project /></section>
+        <section className="project"><Project data={dataJson} /></section>
         <section className="contact"><Contact /></section>
       </main>
     </HashRouter>
