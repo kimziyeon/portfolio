@@ -15,14 +15,13 @@ function Project({ data }) {
                         <span>{item.subtitle}</span>
                         <h3>{item.title}</h3>
                         <p>{item.detail}</p>
-
                     </div>
 
-
-
-
                     <div className='p_left_content2'>
-
+                        <div className='content_icon'>
+                            <a href={item.gitUrl} target="_blank"><img src="/img/git_icon_blue.png" alt="github" /></a>
+                            <a href={item.webUrl} target="_blank"><img src="/img/link_icon_blue.png" alt="link" /></a>
+                        </div>
                         <div className='p_c_flex'>
                             <p>주요업무</p>
                             <p>{item.work}</p>
@@ -31,6 +30,7 @@ function Project({ data }) {
                             <p>기술스택</p>
                             <p>{item.stack}</p>
                         </div>
+
                         {/* <div className='p_c_flex'>
                             <p>Git hub</p>
                             <a href="#" target="_blank">{item.gitUrl}</a>
@@ -39,6 +39,7 @@ function Project({ data }) {
                             <p>Web</p>
                             <a href="#" target="_blank">{item.webUrl}</a>
                         </div> */}
+
                     </div>
                 </div>
 
@@ -59,14 +60,7 @@ function Project({ data }) {
 
                     </div>
                 </div>
-
-
-
-
-
-
             </article>
-
         )
         )
     }

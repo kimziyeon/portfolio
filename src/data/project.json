@@ -11,8 +11,8 @@
             "gitUrl": "https://dragon1431.github.io/teamA_hit/",
             "webUrl": "https://dragon1431.github.io/teamA_hit/",
             "deployUrl": "https://dragon1431.github.io/teamA_hit/",
-            "img01": "/img/project/seoul_widow.png",
-            "img02": "/img/project/seoul_widow.png"
+            "img01": "/img/project/seoul_768.png",
+            "img02": "/img/project/seoul_768.png"
         },
         {
             "id": 1,
@@ -24,21 +24,8 @@
             "gitUrl": "https://dragon1431.github.io/teamA_hit/",
             "webUrl": "https://dragon1431.github.io/teamA_hit/",
             "deployUrl": "https://dragon1431.github.io/teamA_hit/",
-            "img01": "/img/project/seoul_widow.png",
-            "img02": "/img/project/seoul_widow.png"
-        },
-        {
-            "id": 2,
-            "title": "서울특별시 홈페이지2",
-            "subtitle": "RESPONSIVE WEB [PC, MOB]",
-            "detail": "프로젝트2 내용내용프로젝트 내용내용 프로젝트 내용내용 프로젝트 내용내용프로젝트 내용내용프로젝트 내용내용 프로젝트",
-            "work": "마크업 / 레이아웃 디자인",
-            "stack": "Figma / Html / Css / Javascript / json",
-            "gitUrl": "https://dragon1431.github.io/teamA_hit/",
-            "webUrl": "https://dragon1431.github.io/teamA_hit/",
-            "deployUrl": "https://dragon1431.github.io/teamA_hit/",
-            "img01": "/img/project/seoul_widow.png",
-            "img02": "/img/project/seoul_widow.png"
+            "img01": "/img/project/choding_768.png",
+            "img02": "/img/project/choding_768.png"
         }
     ]
 }
