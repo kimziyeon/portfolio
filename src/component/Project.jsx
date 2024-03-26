@@ -11,33 +11,40 @@ function Project({ data }) {
 
             <article className='p_main' key={item.id} >
                 <div className='p_left'>
-                    <div className='p_left_c1'>
-                        <span>RESPONSIVE WEBSITE &#91;PC, MOB&#93;</span>
+                    <div className='p_left_content1'>
+                        <span>{item.subtitle}</span>
                         <h3>{item.title}</h3>
                         <p>{item.detail}</p>
+
                     </div>
 
-                    <div className='p_left_c2'>
+
+
+
+                    <div className='p_left_content2'>
+
                         <div className='p_c_flex'>
                             <p>주요업무</p>
                             <p>{item.work}</p>
                         </div>
-                        <div className='p_c_flex'>
+                        <div className='p_c_flex_bottom'>
                             <p>기술스택</p>
                             <p>{item.stack}</p>
                         </div>
-                        <div className='p_c_flex'>
+                        {/* <div className='p_c_flex'>
                             <p>Git hub</p>
                             <a href="#" target="_blank">{item.gitUrl}</a>
                         </div>
-                        <div className='p_c_flex2'>
+                        <div className='p_c_flex_bottom'>
                             <p>Web</p>
                             <a href="#" target="_blank">{item.webUrl}</a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                <a href={item.deployUrl} className='p_right' target="_blank" >
 
+                {/* <a href={item.deployUrl} className='p_right' target="_blank" > */}
+
+                <div className='p_right'>
                     <div className='p_mockup_w'>
 
                         <p className='box01'><img src={item.img02} alt="img01" /></p>
@@ -51,8 +58,7 @@ function Project({ data }) {
                         <p className='ipadH'><img src='/img/iPadPro11_h.png' alt="오류" /></p>
 
                     </div>
-
-                </a>
+                </div>
 
 
 
