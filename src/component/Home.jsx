@@ -9,8 +9,9 @@ function Home(props) {
             <article className='h_main'>
                 <div className='h_left'>
                     <p className='title'>
-                        FRONT-END<br />
-                        DEVELOPER
+                        WEB -<br />
+                        PUBLISHER
+                        {/* Web Publisher */}
                     </p>
                     <p className='title_sub'>
                         <span>Jiyeon portfolio &copy; 2024</span>
@@ -21,7 +22,8 @@ function Home(props) {
 
                     <div className='bubble1'>
                         <div className='bubble_txt'>
-                            <h3>I have a diverse range of code</h3>
+                            <h3>Hello !</h3>
+                            {/* <h3>I have a diverse range of code</h3> */}
                         </div>
                     </div>
                     <div className='bubble2'>
