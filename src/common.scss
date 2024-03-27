@@ -29,8 +29,6 @@
             }
         }
 
-
-
     }
 
     @include responsive(s) {
@@ -41,9 +39,10 @@
         }
     }
 
+    //main main main main main main
+
     main {
         .home {
-            min-height: 100vh;
 
             .h_main {
                 @include flexbox(sb);
@@ -78,7 +77,6 @@
                     @include column-flexbox();
                     justify-content: flex-end;
                     align-items: flex-end;
-                    // padding: 290px 10px 0 0;
 
                     .bubble1,
                     .bubble2 {
@@ -115,8 +113,6 @@
                         h3 {
                             font-weight: 500;
                         }
-
-                        img {}
                     }
 
 
@@ -129,8 +125,6 @@
                         padding-top: 10px;
                         animation: fadein 1s 0.5s forwards;
                     }
-
-
 
                     @keyframes fadein {
                         to {
@@ -183,12 +177,12 @@
 
             @include responsive(xl) {
                 .h_main {
-                    .h_left {}
-
                     .h_right {
 
                         .bubble1,
                         .bubble2 {
+                            margin: 0 100px 0 10px;
+
                             .bubble_txt {
                                 font-size: 18px;
                             }
@@ -240,39 +234,44 @@
     }
 }
 
+
+
+//about about about about about
+
 .about {
     .a_main {
-        padding: 6% 3%;
+        padding: 4% 3%;
         border-bottom: 1px solid #A0A0A0;
 
         .a_title {
             @include flexbox($ai: c);
             gap: 5%;
-            margin-bottom: 5%;
+            margin-bottom: 4%;
 
             h4 {
                 color: #057FFE;
                 font-size: 2.5vw;
             }
-
-            p {}
         }
 
         @include responsive(xxl) {
             .a_title {
-                text-align: center;
                 display: block;
+                margin: 7% 13% 10% 20%;
 
                 h4 {
-                    font-size: 3.2vw;
-                    margin-bottom: 1%;
+                    font-size: 2rem;
+                    padding-bottom: 1%;
+
                 }
 
                 p {
-                    margin-bottom: 10%;
+                    margin-bottom: 6%;
                 }
             }
         }
+
+
 
 
 
@@ -286,7 +285,7 @@
                 'a c e'
                 'a d e';
 
-            gap: 50px 5%;
+            gap: 20px 3%;
             grid-template-rows: auto;
             box-sizing: content-box;
 
@@ -301,6 +300,10 @@
 
             >div:nth-of-type(2) {
                 grid-area: b;
+
+                a:hover {
+                    color: #A0A0A0;
+                }
 
                 a {
                     display: block;
@@ -363,8 +366,6 @@
                     'e e';
 
                 .a_skill_flex {
-                    width: 65%;
-
                     >div {
                         width: 120px;
                         height: 120px;
@@ -373,8 +374,60 @@
             }
         }
 
-        @include responsive(xxl) {
-            .a_conts {}
+        @include responsive(l) {
+            .a_title {
+                margin: 0 5%;
+            }
+
+            .a_conts {
+                margin-left: 20%;
+                grid-template-columns: 35% 65%;
+                grid-template-areas:
+                    'a b'
+                    'c c'
+                    'd d'
+                    'e e';
+
+                .a_skill_flex {
+                    width: 50%;
+
+                    >div {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+
+        @include responsive(m) {
+            .a_conts {
+                margin: 5%;
+
+                .a_skill_flex {
+                    width: 100%;
+
+                    >div {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+
+
+        @include responsive(s) {
+            .a_conts {
+                margin: 0;
+                gap: 5px;
+
+                .a_skill_flex {
+
+                    >div {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
         }
     }
 
@@ -596,9 +649,7 @@
 }
 
 .contact {
-
     .c_main {
-        border-top: 1px solid #A0A0A0;
         border-bottom: 1px solid #A0A0A0;
         margin-top: 80px;
         @include flexbox();
@@ -746,11 +797,11 @@
             padding: 2% 3%;
 
             h3 {
-                font-size: 2.5rem;
+                font-size: 4.5vw;
             }
 
             form {
-                margin-top: 100px;
+                margin-top: 10%;
 
                 .input_box {
                     padding: 10px;
@@ -761,7 +812,7 @@
                         border: 0;
                         border-bottom: 1px solid #A0A0A0;
                         color: #3D3D3D;
-                        width: 400px;
+                        width: 90%;
                         padding: 10px 0 10px 0;
                         font-size: 20px;
                     }
@@ -786,8 +837,8 @@
                     color: #3D3D3D;
                     background-color: #fff;
                     text-align: right;
-                    width: 400px;
-                    padding: 10px 0 10px 0;
+                    width: 90%;
+                    padding-right: 7%;
                 }
 
                 .send:hover {

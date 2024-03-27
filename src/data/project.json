@@ -20,7 +20,7 @@
             "subtitle": "MOBILE WEB [MOB, TAB]",
             "detail": "누구나 쉽고 편하게 코딩 공부를 할 수 있는 플랫폼 프로젝트로 사용자의 효율적인 정보 탐색을 위한 API검색 기능을 통합하고, CRUD 데이터 연결, STORE로 분리해 회원 데이터에 맞는 레벨 데이터를 출력하고, PWA를 적용해 사용자가 필요로 하고 서로 공유할 수 있는 서비스입니다.",
             "work": "검색 API / 마이페이지 / 레벨테스트 팝업",
-            "stack": "Next.js / TypeScript / Axios / PWA / Sass / Json",
+            "stack": "Next.js / TypeScript / Sass / Json",
             "gitUrl": "https://dragon1431.github.io/teamA_hit/",
             "webUrl": "https://dragon1431.github.io/teamA_hit/",
             "deployUrl": "https://dragon1431.github.io/teamA_hit/",

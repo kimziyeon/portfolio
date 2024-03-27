@@ -26,8 +26,8 @@ function About(props) {
                         <h5>Contact</h5>
                         <p>010 - 4025 - 4037</p>
                         <p>aa40254037@gmail.com</p>
-                        <a href="https://github.com/kimziyeon">--------------------- GitHub</a>
-                        <a href='https://velog.io/@aa40254037'>----------------------- Velog</a>
+                        <a href='https://github.com/kimziyeon' target='blank'>--------------------- GitHub</a>
+                        <a href='https://velog.io/@aa40254037' target='blank'>----------------------- Velog</a>
                     </div>
 
                     <div className='a_g3'>
