@@ -28,7 +28,7 @@ function Home(props) {
                     </div>
                     <div className='bubble2'>
                         <div className='bubble_txt'>
-                            <h3>I’m &lt; &emsp;&emsp;&emsp;&emsp; &#47; &gt;</h3>
+                            <h3>I’m &lt; &emsp;&emsp;&emsp; &#47; &gt;</h3>
                         </div>
                     </div>
 

@@ -69,7 +69,8 @@ $m-breakpoint: 600px;
 $l-breakpoint: 768px;
 $xl-breakpoint: 900px;
 $xxl-breakpoint: 1024px;
-$xxxl-breakpoint: 1200px;
+$xxxl-breakpoint: 1280px;
+$xxxxl-breakpoint: 1440px;
 
 
 @mixin responsive($screen) {
@@ -105,6 +106,12 @@ $xxxl-breakpoint: 1200px;
 
     @if ($screen =='xxxl') {
         @media screen and (max-width: $xxxl-breakpoint) {
+            @content;
+        }
+    }
+
+    @if ($screen =='xxxxl') {
+        @media screen and (max-width: $xxxxl-breakpoint) {
             @content;
         }
     }
