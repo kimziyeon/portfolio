@@ -10,7 +10,7 @@
         width: 90%;
         background-color: #FFFFFF;
         top: 0;
-        z-index: 1;
+        z-index: 10;
         border-bottom: 1px solid #A0A0A0;
 
         >div {
@@ -31,13 +31,24 @@
 
     }
 
+    @include responsive(l) {
+        header {
+            padding: 4%;
+        }
+    }
+
     @include responsive(s) {
         header {
-            nav {
+            border: none;
+            justify-content: center;
+
+            >div {
                 display: none;
             }
         }
     }
+
+
 
     //main main main main main main
 
@@ -201,6 +212,7 @@
 
                     .h_left {
                         border: none;
+                        padding-top: 20px;
 
                         .title {
                             border: none;
@@ -209,7 +221,7 @@
                     }
 
                     .h_right {
-
+                        max-height: 60vh;
 
                         .bubble1,
                         .bubble2 {
@@ -220,6 +232,18 @@
 
                         .mimoticon {
                             width: 220px;
+                        }
+                    }
+                }
+            }
+
+            @include responsive(s) {
+                .h_main {
+                    .h_left {
+                        padding-top: 0;
+
+                        .title {
+                            font-size: 22vw;
                         }
                     }
                 }
@@ -240,7 +264,7 @@
 
 .about {
     .a_main {
-        padding: 4% 3%;
+        padding: 8% 3%;
         border-bottom: 1px solid #A0A0A0;
 
         .a_title {
@@ -261,7 +285,7 @@
 
                 h4 {
                     font-size: 2rem;
-                    padding-bottom: 1%;
+                    padding-bottom: 2%;
 
                 }
 
@@ -291,7 +315,12 @@
 
             >div>h5 {
                 font-size: 1.3rem;
-                padding: 5px 0 10px;
+                padding: 15px 0 5px;
+            }
+
+            >div>p,
+            a {
+                line-height: 30px;
             }
 
             >div:nth-of-type(1) {
@@ -326,6 +355,10 @@
             .a_g_flex {
                 display: flex;
                 gap: 8px;
+
+                >div>p {
+                    line-height: 30px;
+                }
             }
 
             .a_skill_flex {
@@ -351,6 +384,8 @@
         }
 
         @include responsive(xxxxl) {
+
+
             .a_conts {
                 grid-template-columns: 13% 37% 55%;
             }
@@ -375,8 +410,17 @@
         }
 
         @include responsive(l) {
+
             .a_title {
-                margin: 0 5%;
+                margin: 0 20%;
+
+                h4 {
+                    font-size: 10vw;
+                }
+
+                p {
+                    margin-bottom: 20%;
+                }
             }
 
             .a_conts {
@@ -400,15 +444,30 @@
         }
 
         @include responsive(m) {
+            .a_title {
+                margin: 5%;
+
+                p {
+                    font-size: 18px;
+
+                }
+
+                h4 {
+                    font-size: 16vw;
+                }
+            }
+
             .a_conts {
+                font-size: 18px;
                 margin: 5%;
 
                 .a_skill_flex {
-                    width: 100%;
+                    width: 80%;
+                    gap: 15px;
 
                     >div {
-                        width: 100px;
-                        height: 100px;
+                        width: 80px;
+                        height: 80px;
                     }
                 }
             }
@@ -417,11 +476,14 @@
 
         @include responsive(s) {
             .a_conts {
-                margin: 0;
-                gap: 5px;
+
+                display: block;
+
+                >div>h5 {
+                    padding: 20px 0 10px;
+                }
 
                 .a_skill_flex {
-
                     >div {
                         width: 70px;
                         height: 70px;
@@ -439,6 +501,7 @@
 
 
 
+//project project project project project project
 
 .project {
     .p_main {
@@ -455,7 +518,6 @@
                 span {
                     color: #A0A0A0;
                     padding-left: 5px;
-
                 }
 
                 h3 {
@@ -488,8 +550,6 @@
                         }
                     }
                 }
-
-
 
                 .p_c_flex,
                 .p_c_flex_bottom {
@@ -524,10 +584,11 @@
 
             .p_mockup_w {
                 .box01 {
-                    width: 354px;
+                    max-width: 96%;
                     position: absolute;
-                    top: 115px;
-                    left: 115px;
+                    top: 5%;
+                    left: 2%;
+                    z-index: -1;
 
                     img {
                         width: 100%;
@@ -535,10 +596,11 @@
                 }
 
                 .ipadW {
-                    width: 380px;
+                    max-width: calc(52% - 100px);
                     position: absolute;
-                    top: 100px;
-                    left: 100px;
+                    top: 15.5%;
+                    left: 10%;
+                    z-index: 2;
 
                     img {
                         width: 100%;
@@ -549,10 +611,11 @@
 
             .p_mockup_h {
                 .box02 {
-                    width: 280px;
+                    max-width: calc(39.5% - 100px);
                     position: absolute;
-                    top: 115px;
-                    left: 550px;
+                    position: absolute;
+                    top: 17.4%;
+                    left: 57.3%;
 
                     img {
                         width: 100%;
@@ -560,10 +623,10 @@
                 }
 
                 .ipadH {
-                    width: 300px;
+                    max-width: calc(42% - 100px);
                     position: absolute;
-                    top: 100px;
-                    left: 540px;
+                    top: 15.5%;
+                    left: 56%;
 
                     img {
                         width: 100%;
@@ -573,73 +636,119 @@
 
         }
 
+        .p_right:hover {
+
+            .p_mockup_w {
+                .box01 {
+                    top: 95%;
+                    transform: translate(0, calc(-100%));
+                    transition: 4s ease-out;
+                }
+            }
+        }
+
+        @include responsive(xxxxl) {
+            .p_left {}
+
+            .p_right {
+                .p_mockup_w {
+                    .box01 {}
+
+                    .ipadW {
+                        max-width: 300px;
+                    }
+                }
+
+                .p_mockup_h {
+                    .box02 {
+                        max-width: 220px;
+                    }
+
+                    .ipadH {
+                        max-width: 240px;
+                    }
+                }
+            }
+        }
+
+        @include responsive(xxxl) {
+            .p_left {
+                width: 50%;
+            }
+
+            .p_right {
+                width: 45%;
+
+                .p_mockup_w {
+                    .ipadW {
+                        top: 15.5%;
+                        left: 17%;
+                    }
+                }
+
+                .p_mockup_h {
+                    display: none;
+                }
+            }
+        }
+
+        @include responsive(xxl) {
+            .p_right {
+                .p_mockup_w {
+                    .ipadW {
+                        left: 10%;
+                    }
+                }
+            }
+        }
+
+    }
 
 
+    @include responsive(xl) {
+        .p_main {
+            display: block;
 
+            .p_left {
+                width: 100%;
+                display: block;
 
+                .p_left_content1 {
+                    span {
+                        font-size: 1rem;
+                    }
 
+                    h3 {
+                        font-size: 1.7rem;
+                        font-weight: bold;
+                        margin: 5px 0 12px;
+                    }
+                }
 
+                .p_left_content2 {
+                    margin-top: 7%;
+                }
+            }
 
+            .p_right {
+                display: block;
+                width: 100%;
+                height: 500px;
+                margin: 5% 0;
+                border: none;
 
+                .p_mockup_w {
+                    .box01 {}
 
+                    .ipadW {
+                        max-width: 70%;
+                        top: 10%;
+                        left: 15%;
 
-
-        // .p_mockup_h {
-        //     position: absolute;
-        //     right: 2%;
-        //     overflow: hidden;
-
-        //     >div {
-        //         width: 280px;
-
-
-        //         img {
-        //             width: 100%;
-        //         }
-        //     }
-
-        //     .ipad {
-
-
-        //         .ipadH {
-        //             width: 300px;
-        //             position: absolute;
-        //             top: 0;
-
-        //             img {
-        //                 width: 100%;
-        //                 height: 100%;
-        //             }
-        //         }
-        //     }
-        // }
-
-
-
-
-
-
-        // .p_seoul {
-
-        //     // width: 100%;
-        //     // background: url(./img/mockup/seoul_caprture/seoul_widow.png), url(./img/mockup/seoul_caprture/seoul_widow.png);
-        //     // background-repeat: no-repeat;
-        //     // background-position: 18.5% 245px, 85.5% 108px;
-        //     // background-size: 42%, 30%;
-        //     // transition: 4s ease-out;
-
-        // }
-
-        // .p_right:hover {
-        //     .p_seoul {
-        //         width: 100%;
-        //         background: url(./img/mockup/seoul_caprture/seoul_widow.png), url(./img/mockup/seoul_caprture/seoul_widow.png);
-        //         background-repeat: no-repeat;
-        //         background-position: 18.5% -660px, 85.5% 108px;
-        //         background-size: 42%, 30%;
-        //     }
-        // }
-
+                    }
+                }
+            }
+        }
     }
 
     .scroll {
@@ -648,8 +757,15 @@
     }
 }
 
+
+
+
+
+//contact  contact  contact  contact  contact  contact
+
 .contact {
     .c_main {
+        border-top: 1px solid #A0A0A0;
         border-bottom: 1px solid #A0A0A0;
         margin-top: 80px;
         @include flexbox();
@@ -735,9 +851,7 @@
             }
 
             .msg_write {
-                @include flexbox($ai: c);
-                // display: flex;
-                // align-items: center;
+                @include flexbox(sb, c);
                 flex-wrap: wrap;
 
                 .msg_btn {
@@ -750,15 +864,13 @@
                 }
 
                 .msg_input {
-                    width: 250px;
+                    width: 60%;
                     border: 1px solid #d1d1d1;
                     border-radius: 30px;
                     margin: 0 5px 0 10px;
                     padding: 5px 0 5px 15px;
                     @include flexbox(sb, c);
-                    // display: flex;
-                    // justify-content: space-between;
-                    // align-items: center;
+
 
                     input {
                         border: 0;
@@ -843,6 +955,67 @@
 
                 .send:hover {
                     color: #d1d1d1;
+                }
+            }
+        }
+    }
+
+    @include responsive(xl) {
+        .c_main {
+            display: block;
+
+            .c_left {
+                width: 100%;
+
+                .msg_list {
+                    justify-content: center;
+
+                }
+
+                .msg_write {
+                    flex-wrap: nowrap;
+
+                    .msg_input {
+                        width: 68%;
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            .c_right {
+                margin: 6% auto;
+                border: none;
+
+                h3 {
+                    font-size: 40px;
+                }
+
+                form {
+                    .input_box {
+
+                        input,
+                        textarea {
+                            border: none;
+                            width: 50%;
+                        }
+                    }
+
+                    .send {
+                        text-align: left;
+                        color: #067FFE;
+                    }
+                }
+            }
+        }
+
+        @include responsive(m) {
+            .c_left {
+                .msg_write {
+                    .msg_btn {
+                        display: flex;
+                    }
+
+                    .msg_input {}
                 }
             }
         }

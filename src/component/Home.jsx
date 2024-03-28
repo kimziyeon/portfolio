@@ -11,7 +11,7 @@ function Home(props) {
                     <p className='title'>
                         WEB -<br />
                         PUBLISHER
-                        {/* Web Publisher */}
+
                     </p>
                     <p className='title_sub'>
                         <span>Jiyeon portfolio &copy; 2024</span>

@@ -12,17 +12,17 @@ import send from '../img/send.png';
 function Contact(props) {
 
 
-    const [alter,setAlter] = useState('');
+    const [alter, setAlter] = useState('');
     const { data, getData, status, postData, deleteData, putData } = useStore();
 
     const elInput = useRef();
 
-    const onSaveHandler = ()=>{
+    const onSaveHandler = () => {
         if (elInput.current.value === "") return;
 
         let params = null;
-        if(alter.id !='' && alter.id != undefined){
-            params = {id : alter.id, name:elInput.current.value}
+        if (alter.id != '' && alter.id != undefined) {
+            params = { id: alter.id, name: elInput.current.value }
             putData(params)
         }
     }
@@ -31,19 +31,19 @@ function Contact(props) {
 
     const form = useRef();
 
-    const sendEmail = (e)=>{
+    const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_eb3e5m1','template_5zk5oph',form.current,'Xs4rVPKl_SRLqTshc',)
-        .then(
-            ()=>{
-                console.log("성공");
-                alert("성공적으로 이메일이 전송되었습니다.");
-            },(error)=>{
-                console.log('실패',error.text);
-                alert("이메일이 전송이 실패되었습니다.");
-            },
-        );
+        emailjs.sendForm('service_eb3e5m1', 'template_5zk5oph', form.current, 'Xs4rVPKl_SRLqTshc',)
+            .then(
+                () => {
+                    console.log("성공");
+                    alert("성공적으로 이메일이 전송되었습니다.");
+                }, (error) => {
+                    console.log('실패', error.text);
+                    alert("이메일이 전송이 실패되었습니다.");
+                },
+            );
     };
 
 
@@ -55,10 +55,11 @@ function Contact(props) {
 
                     <div className='msg_list'>
                         <p className='bubble gray'>
-                            <span > dfsdf </span>
+                            <span > 그레이그레이 </span>
                         </p>
+
                         <p className='bubble blue'>
-                            <span> 블루그레이이이이이 </span>
+                            <span> 블루블루블루블루블루 </span>
                             <button>x</button>
                         </p>
                     </div>
@@ -71,8 +72,8 @@ function Contact(props) {
                         </div>
 
                         <div className='msg_input'>
-                            <input type='text' ref={elInput} placeholder="Message"/>
-                            <button  onClick={() => { onSaveHandler() }} ><img src={send} alt="send"/></button>
+                            <input type='text' ref={elInput} placeholder="Message" />
+                            <button onClick={() => { onSaveHandler() }} ><img src={send} alt="send" /></button>
                         </div>
                     </div>
 

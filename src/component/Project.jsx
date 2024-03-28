@@ -30,35 +30,24 @@ function Project({ data }) {
                             <p>기술스택</p>
                             <p>{item.stack}</p>
                         </div>
-
-                        {/* <div className='p_c_flex'>
-                            <p>Git hub</p>
-                            <a href="#" target="_blank">{item.gitUrl}</a>
-                        </div>
-                        <div className='p_c_flex_bottom'>
-                            <p>Web</p>
-                            <a href="#" target="_blank">{item.webUrl}</a>
-                        </div> */}
-
                     </div>
                 </div>
 
-                {/* <a href={item.deployUrl} className='p_right' target="_blank" > */}
-
                 <div className='p_right'>
-                    <div className='p_mockup_w'>
+                    <a href={item.deployUrl}>
+                        <div className='p_mockup_w'>
+                            <p className='ipadW'>
+                                <span className='box01'><img src={item.img02} alt="img01" /></span>
+                                <img src='/img/iPadPro11_w.png' alt="오류" /></p>
 
-                        <p className='box01'><img src={item.img02} alt="img01" /></p>
-                        <p className='ipadW'><img src='/img/iPadPro11_w.png' alt="오류" /></p>
+                        </div>
 
-                    </div>
+                        <div className='p_mockup_h'>
+                            <p className='box02'><img src={item.img02} alt="img02" /></p>
+                            <p className='ipadH'><img src='/img/iPadPro11_h.png' alt="오류" /></p>
 
-                    <div className='p_mockup_h'>
-
-                        <p className='box02'><img src={item.img02} alt="img02" /></p>
-                        <p className='ipadH'><img src='/img/iPadPro11_h.png' alt="오류" /></p>
-
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </article>
         )
