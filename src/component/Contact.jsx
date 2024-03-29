@@ -27,8 +27,6 @@ function Contact(props) {
         }
     }
 
-
-
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -84,8 +82,16 @@ function Contact(props) {
                 <div className='c_right'>
                     <h3>Thank you for<br /> watching!</h3>
 
+                    <div className='please'>
+                        <p>please feel free to reach out :&#41;</p>
+                        <p>+82 10-4025-4037</p>
+                        <p>aa40254037@gmail.com</p>
+                        <b></b>
+                    </div>
 
-                    <form ref={form} onSubmit={sendEmail}>
+                    {/* //Email */}
+
+                    {/* <form ref={form} onSubmit={sendEmail}>
                         <div className='input_box'>
                             <label htmlFor="">YOUR NAME</label>
                             <input type="text" id="name" name='user_name' placeholder="Jiyeon kim" />
@@ -102,7 +108,8 @@ function Contact(props) {
                         </div>
 
                         <input className='send' type="submit" name="send" value="SEND MESSAGE" />
-                    </form>
+                    </form> */}
+
 
                 </div>
             </article>

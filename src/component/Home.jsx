@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import itsme from '../img/aa.gif';
 import scroll from '../scrolldown.svg';
 
-function Home(props) {
+function Home({ menuclick, menuRef }) {
+
     return (
         <>
             <article className='h_main'>
@@ -38,7 +39,7 @@ function Home(props) {
                 </div>
             </article>
 
-            <p className='scroll'>
+            <p className='scroll' onClick={() => menuclick(menuRef.current[1])}>
                 <Link> <img src={scroll} alt="scroll down" /></Link>
 
             </p>

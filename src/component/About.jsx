@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import scroll from '../scrolldown.svg';
 
-function About(props) {
+function About({ menuRef, menuclick }) {
+
+    // console.log(props.menuRef.current[0])
     return (
         <>
             <article className='a_main'>
@@ -84,7 +86,7 @@ function About(props) {
 
             </article >
 
-            <p className='scroll'>
+            <p className='scroll' onClick={() => { menuclick(menuRef.current[2]) }}>
                 <Link> <img src={scroll} alt="scroll down" /></Link>
 
             </p>

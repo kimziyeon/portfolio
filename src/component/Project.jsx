@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import scroll from '../scrolldown.svg';
 
 
-function Project({ data }) {
-    console.log(data)
+function Project({ data, menuRef, menuclick }) {
+    // console.log(data)
 
     const renderProjects = () => {
         return data.project.map((item) => (
@@ -35,7 +35,7 @@ function Project({ data }) {
 
                 <div className='p_right'>
                     <a href={item.deployUrl}>
-                        <div className='p_mockup_w'>
+                        <div className='p_mockup_w' target="_blank">
                             <p className='ipadW'>
                                 <span className='box01'><img src={item.img02} alt="img01" /></span>
                                 <img src='/img/iPadPro11_w.png' alt="오류" /></p>
@@ -58,7 +58,7 @@ function Project({ data }) {
     return (
         <>
             {renderProjects()}
-            <p className='scroll'>
+            <p className='scroll' onClick={() => { menuclick(menuRef.current[3]) }}>
                 <Link> <img src={scroll} alt="scroll down" /></Link>
 
             </p>
