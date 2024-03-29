@@ -2,40 +2,26 @@ import { create } from 'zustand';
 import axios from 'axios';
 
 const request = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://port-0-express-ll53u2blrjy7urw.sel5.cloudtype.app/portfolio',
     timeout: 1000
 });
 
-export const useStore = create((set)=>{
+export const useStore = create((set) => {
     return {
-        data : [],
+        data: [],
         status: false,
-        getData: ()=>{
-            set({starus :false});
+        getData: () => {
+            set({ status: false });
             request.get('/')
-                .then(res=>{
-                    set({data:res.data, status:true});
+                .then(res => {
+                    set({ data: res.data, status: true });
                 })
         },
-
-        postData: (forms)=>{
-            request.post('/',forms)
-                .then(res=>{
-                    set({data:res.data, status:true});
-                })
-        },
-
-        putData: (forms)=>{
-            request.put('/',forms)
-                .then(res=>{
-                    set({data:res.data, status:true});
-                })
-        },
-
-        deleteData: (id)=>{
-            request.delete('/',`/${id}`)
-                .then(res=>{
-                    set({data:res.data, status:true});
+        postData: (forms) => {
+            set({ status: false });
+            request.post('/insert', forms)
+                .then(res => {
+                    set({ data: res.data, status: true });
                 })
         }
     }

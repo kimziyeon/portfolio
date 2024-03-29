@@ -39,6 +39,7 @@
         header {
             border: none;
             justify-content: center;
+            font-size: 16px;
 
             >div {
                 display: none;
@@ -252,9 +253,9 @@
 
             @include responsive(s) {
                 .h_main {
-                    .h_left {
-                        padding-top: 0;
+                    padding-top: 7%;
 
+                    .h_left {
                         .title {
                             font-size: 22vw;
                         }
@@ -791,19 +792,33 @@
             padding: 3%;
 
             .msg_list {
-                height: 70vh;
-                @include flexbox($ai: e);
-                // display: flex;
-                // align-items: flex-end;
+                height: 68vh;
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                @include flexbox() {
+                    flex-direction: column
+                }
 
                 .bubble {
                     position: relative;
                     padding: 10px 36px 13px;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
+                    font-size: 24px;
 
                     &.blue {
                         background-color: #067FFE;
                         color: white;
+                        margin-left: auto;
+                        margin-right: 10px;
+
+                        opacity: 0;
+                        transform: translateY(50px);
+                        animation: fadein 1s forwards;
                     }
 
                     &.blue:before,
@@ -820,6 +835,7 @@
                     &.gray {
                         background-color: #E5E5EA;
                         color: black;
+                        margin-right: auto;
                     }
 
                     &.gray:before,
@@ -904,16 +920,6 @@
                         cursor: pointer;
 
                     }
-
-                    // #send {
-                    //     width: 32px;
-                    //     height: 32px;
-                    //     border-radius: 16px;
-                    //     background: #057FFE url(../public/img/send.png);
-                    //     background-repeat: no-repeat;
-                    //     background-position: center;
-                    //     // transition: 4s ease-out;
-                    // }
                 }
             }
 
@@ -939,9 +945,27 @@
                     padding: 3px 0;
                 }
             }
-
         }
     }
+
+    @include responsive(xxl) {
+        .c_main {
+            .c_right {
+                h3 {
+                    font-size: 3.5vw;
+                }
+
+                .please {
+                    padding-left: 10px;
+                    font-size: 2vw;
+                    top: 85%;
+                    left: 67%;
+                }
+            }
+        }
+    }
+
+
 
     @include responsive(xl) {
         .c_main {
@@ -973,7 +997,6 @@
                 h3 {
                     font-size: 40px;
                 }
-
             }
         }
 
@@ -991,11 +1014,13 @@
     }
 
     .c_title_sub {
-        padding: 10px 30px;
+        padding: 0.5% 1%;
+        @include flexbox(sb);
+
+        p {}
 
         span {
-            display: block;
-            text-align: right;
+            color: #fff;
         }
     }
 }
