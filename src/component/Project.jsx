@@ -34,7 +34,7 @@ function Project({ data, menuRef, menuclick }) {
                 </div>
 
                 <div className='p_right'>
-                    <a href={item.deployUrl}>
+                    <a href={item.webUrl}>
                         <div className='p_mockup_w' target="_blank">
                             <p className='ipadW'>
                                 <span className='box01'><img src={item.img02} alt="img01" /></span>
