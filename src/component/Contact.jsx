@@ -4,6 +4,9 @@ import resume from '../img/resume.png';
 import github from '../img/github.png';
 import velog from '../img/velog.png';
 import send from '../img/send.png';
+import msgImg from '../img/chat.png';
+import left from '../img/arrowLeftGrayDark.svg';
+
 
 
 
@@ -47,7 +50,11 @@ function Contact(props) {
             <article className='c_main'>
 
                 <div className='c_left'>
-
+                    <div className='msg_chat'>
+                        <div><img src={left} alt="left" /></div>
+                        <div className='msg_name'>ziyeon Kim</div>
+                        <div className='msg_img'><img src={msgImg} alt="msgImg" /></div>
+                    </div>
                     <div className='msg_list'>
                         {
                             data.map((obj, idx) => (

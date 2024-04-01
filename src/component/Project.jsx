@@ -58,10 +58,9 @@ function Project({ data, menuRef, menuclick }) {
     return (
         <>
             {renderProjects()}
-            <p className='scroll' onClick={() => { menuclick(menuRef.current[3]) }}>
+            {/* <p className='scroll' onClick={() => { menuclick(menuRef.current[3]) }}>
                 <Link> <img src={scroll} alt="scroll down" /></Link>
-
-            </p>
+            </p> */}
         </>
     );
 }
