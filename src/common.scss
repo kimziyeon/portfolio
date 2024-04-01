@@ -784,7 +784,6 @@
         border-bottom: 1px solid #A0A0A0;
         margin-top: 10%;
         @include flexbox();
-        position: relative;
 
         .c_left {
 
@@ -905,7 +904,6 @@
 
                     input {
                         border: 0;
-                        padding: 5px;
                         background: none;
                     }
 
@@ -933,13 +931,12 @@
                 font-size: 4.5vw;
             }
 
-            .please {
-                font-size: 1.5vw;
+            .call {
+                margin-top: 10%;
+                font-size: 30px;
                 color: rgb(160, 160, 160, 0.4);
                 font-weight: bold;
-                position: absolute;
-                top: 70%;
-                left: 71%;
+
 
                 >p {
                     padding: 3px 0;
@@ -950,16 +947,25 @@
 
     @include responsive(xxl) {
         .c_main {
+            .c_left {
+                .msg_list {}
+
+                .msg_write {
+                    .msg_input {
+                        input {
+                            width: 89%;
+                        }
+                    }
+                }
+            }
+
             .c_right {
                 h3 {
                     font-size: 3.5vw;
                 }
 
-                .please {
-                    padding-left: 10px;
-                    font-size: 2vw;
-                    top: 85%;
-                    left: 67%;
+                .call {
+                    font-size: 20px;
                 }
             }
         }
@@ -969,7 +975,7 @@
 
     @include responsive(xl) {
         .c_main {
-            display: block;
+            flex-direction: column-reverse;
             border-top: none;
 
             .c_left {
@@ -991,11 +997,14 @@
             }
 
             .c_right {
-                margin: 6% auto;
                 border: none;
 
                 h3 {
-                    font-size: 40px;
+                    font-size: 8vw;
+                }
+
+                .call {
+                    font-size: 4vw;
                 }
             }
         }
@@ -1006,15 +1015,13 @@
                     .msg_btn {
                         display: flex;
                     }
-
-                    .msg_input {}
                 }
             }
         }
     }
 
     .c_title_sub {
-        padding: 0.5% 1%;
+        padding: 1%;
         @include flexbox(sb);
 
         p {}

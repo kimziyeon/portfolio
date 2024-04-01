@@ -4,13 +4,13 @@
             "id": 0,
             "title": "김지연 포트폴리오",
             "subtitle": "RESPONSIVE WEB [PC, TAB, MOB]",
-            "detail": "누구나 쉽고 편하게 코딩 공부를 할 수 있는 플랫폼 프로젝트로 사용자의 효율적인 정보 탐색을 위한 API검색 기능을 통합하고, CRUD 데이터 연결, STORE로 분리해 회원 데이터에 맞는 레벨 데이터를 출력하고, PWA를 적용해 사용자가 필요로 하고 서로 공유할 수 있는 서비스입니다.",
-            "work": "검색 API / 마이페이지 / 레벨테스트 팝업",
-            "stack": "Next.js / TypeScript / Sass / Json",
+            "detail": "React기반으로 각 페이지를 컴포넌트화 하여 구성했으며 페이지 이동을 위해 스크롤 메소드를 사용해 동적처리 하였습니다. 미디어쿼리를 사용해 반응형 웹을 구현, Sass를 사용하여 Css 코드의 간결화 및 유지보수 향상, 스타일 재사용성을 높였고, Node.js 와 Express, Mongo DB를 사용하여 메세지 기능의 서버환경을 구축하였습니다.",
+            "work": "포트폴리오",
+            "stack": "React / Sass / Express",
             "gitUrl": "https://github.com/kimziyeon/portfolio.git",
             "webUrl": "https://kimziyeon-portfolio.vercel.app/",
             "img01": "/img/project/portfolio_768.png",
-            "img02": "/img/project/portfolio_768.png"
+            "img02": "/img/project/portfolio_768_h.png"
         },
         {
             "id": 1,
@@ -26,10 +26,9 @@
         },
         {
             "id": 2,
-            "title": "서울특별시",
+            "title": "서울, 마이소울",
             "subtitle": "RESPONSIVE WEB [PC, MOB]",
             "detail": "대한민국을 대표 수도 서울시의 홈페이지를 개선한 프로젝트로 서울시 홍보, 젊은 층의 접근성 향상을 목표로 지나치게 많은 정보들을 덜어내고 '서울' 자체에 집중 개선하였습니다.",
-            "trouble": "프로젝트 트러블슈팅 프로젝트 트러블슈팅프로젝트 트러블슈팅  프로젝트 트러블슈팅  프로젝트 트러블슈팅 프로젝트 트러블슈팅프로젝트 트러블슈팅프로젝트 트러블슈팅 프로젝트 트러블슈팅 프로젝트 트러블슈팅프로젝트 트러블슈팅프로젝트 트러블슈팅",
             "work": "마크업 / 레이아웃 디자인",
             "stack": "Html / Sass / Javascript / Json",
             "gitUrl": "https://github.com/dragon1431/teamA_hit.git",

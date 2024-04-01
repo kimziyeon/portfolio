@@ -10,8 +10,9 @@ function About({ menuRef, menuclick }) {
             <article className='a_main'>
                 <div className='a_title'>
                     <h4>Hello, I’m</h4>
-                    <p>상상한 무궁무진한 아이디어를 제가 배운 기술로 sdfsdfsㄴd ME!!!!!!!!!!!!<br />
-                        ㅇ헬롷아닐ㄴㅇ린ㅇㄹㄴㅇㄹㄴㅇㄹㄴ자기소개가 제일 어렵고 힘들어ㅇㄴㄹ </p>
+                    <p>주변에 좋은 영향을 전하며 사용하기 쉬운 UI와 기억에 남는 UX를 개발하고,<br />
+                        지속적인 배움과 성장 속에서 발전하는, 어제보다 더 나은 내가 되기 위한 목표를 가지고 꾸준히 성장 중인 김지연입니다.</p>
+
                 </div>
 
                 <div className='a_conts'>
@@ -64,8 +65,8 @@ function About({ menuRef, menuclick }) {
                         <h5>Skills</h5>
                         <div className='a_skill_flex'>
                             <div>Html5</div>
-                            <div>css</div>
-                            <div>sass</div>
+                            <div>Css</div>
+                            <div>Sass</div>
                             <div>Java<br />script</div>
                             <div>Type<br />script</div>
                             <div>React</div>

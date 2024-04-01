@@ -34,10 +34,10 @@ function Project({ data, menuRef, menuclick }) {
                 </div>
 
                 <div className='p_right'>
-                    <a href={item.webUrl}>
+                    <a href={item.webUrl} target="_blank">
                         <div className='p_mockup_w' target="_blank">
                             <p className='ipadW'>
-                                <span className='box01'><img src={item.img02} alt="img01" /></span>
+                                <span className='box01'><img src={item.img01} alt="img01" /></span>
                                 <img src='/img/iPadPro11_w.png' alt="오류" /></p>
 
                         </div>

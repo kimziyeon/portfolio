@@ -91,8 +91,7 @@ function Contact(props) {
                 <div className='c_right'>
                     <h3>Thank you for<br /> watching!</h3>
 
-                    <div className='please'>
-                        <p>please feel free to reach out :&#41;</p>
+                    <div className='call'>
                         <p>+82 10-4025-4037</p>
                         <p>aa40254037@gmail.com</p>
                     </div>
