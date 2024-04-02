@@ -13,7 +13,7 @@ import left from '../img/arrowLeftGrayDark.svg';
 function Contact(props) {
 
 
-    const { data, getData, status, postData, } = useStore();
+    const { data, getData, status, postData, deleteData } = useStore();
     const elInput = useRef();
 
 
@@ -36,6 +36,10 @@ function Contact(props) {
             elMsg.scrollTo(0, elMsg.scrollHeight)
         }, 200)
 
+    }
+
+    const delData = (obj) => {
+        deleteData(obj.num)
     }
 
     useEffect(() => {
@@ -64,7 +68,7 @@ function Contact(props) {
                                     </p>
                                     :
                                     <p className='bubble blue' key={idx}>
-                                        <span> {obj.msg} </span>
+                                        <span> {obj.msg}<button onClick={() => delData(obj)}>X</button> </span>
                                     </p>
                             ))
                         }
@@ -104,10 +108,10 @@ function Contact(props) {
                     </div>
                 </div>
             </article>
-            <p className='c_title_sub'>
+            <div className='c_title_sub'>
                 <span onClick={() => { localStorage.user = 'admin' }}>.</span>
                 <p>Jiyeon portfolio &copy; 2024</p>
-            </p>
+            </div>
         </>
     );
 }

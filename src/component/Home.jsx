@@ -39,10 +39,9 @@ function Home({ menuclick, menuRef }) {
                 </div>
             </article>
 
-            <p className='scroll' onClick={() => menuclick(menuRef.current[1])}>
+            {/* <p className='scroll' onClick={() => menuclick(menuRef.current[1])}>
                 <Link> <img src={scroll} alt="scroll down" /></Link>
-
-            </p>
+            </p> */}
         </>
     );
 }

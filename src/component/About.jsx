@@ -87,10 +87,10 @@ function About({ menuRef, menuclick }) {
 
             </article >
 
-            <p className='scroll' onClick={() => { menuclick(menuRef.current[2]) }}>
+            {/* <p className='scroll' onClick={() => { menuclick(menuRef.current[2]) }}>
                 <Link> <img src={scroll} alt="scroll down" /></Link>
 
-            </p>
+            </p> */}
 
         </>
     );
