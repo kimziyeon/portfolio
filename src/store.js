@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import axios from 'axios';
 
 const request = axios.create({
-    baseURL: 'http://localhost:3000/portfolio',
+    baseURL: 'https://kimziyeon-portfolio.vercel.app/portfolio',
     timeout: 1000
 });
 
