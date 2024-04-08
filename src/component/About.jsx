@@ -1,12 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import scroll from '../scrolldown.svg';
+import { motion } from 'framer-motion';
+
+
 
 function About({ menuRef, menuclick }) {
 
     // console.log(props.menuRef.current[0])
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{
+                ease: "easeInOut",
+                duration: 1,
+                y: { duration: 1 },
+            }}
+        >
             <article className='a_main'>
                 <div className='a_title'>
                     <h4>Hello, I’m</h4>
@@ -92,7 +104,7 @@ function About({ menuRef, menuclick }) {
 
             </p> */}
 
-        </>
+        </motion.div>
     );
 }
 

@@ -40,7 +40,7 @@
             "id": 3,
             "title": "NIKE WOMEN",
             "subtitle": "RESPONSIVE WEB [PC, TAB, MOB]",
-            "detail": "스포츠웨어를 대표하는 나이키",
+            "detail": "스포츠웨어를 대표하는 나이키우먼, 커뮤니티 저널의 일부 페이지를 미디어쿼리로 반응형 클론 코딩하였습니다.",
             "work": "웹사이트 클론",
             "stack": "Html / Sass / Javascript",
             "gitUrl": "https://github.com/kimziyeon/nike_women.git",

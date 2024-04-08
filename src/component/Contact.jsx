@@ -6,6 +6,8 @@ import velog from '../img/velog.png';
 import send from '../img/send.png';
 import msgImg from '../img/chat.png';
 import left from '../img/arrowLeftGrayDark.svg';
+import { motion } from 'framer-motion';
+
 
 
 
@@ -50,7 +52,16 @@ function Contact(props) {
 
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{
+                ease: "easeInOut",
+                duration: 1,
+                y: { duration: 1 },
+            }}
+        >
             <article className='c_main'>
 
                 <div className='c_left'>
@@ -112,7 +123,7 @@ function Contact(props) {
                 <span onClick={() => { localStorage.user = 'admin' }}>.</span>
                 <p>Jiyeon portfolio &copy; 2024</p>
             </div>
-        </>
+        </motion.div>
     );
 }
 
