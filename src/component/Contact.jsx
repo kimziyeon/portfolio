@@ -79,8 +79,15 @@ function Contact(props) {
                                     </p>
                                     :
                                     <p className='bubble blue' key={idx}>
-                                        <span> {obj.msg}<button onClick={() => delData(obj)}>X</button> </span>
+                                        <span> {obj.msg}</span>
                                     </p>
+
+                                // 삭제버튼
+                                //     <p className='bubble blue' key={idx}>
+                                //     <span> {obj.msg}<button onClick={() => delData(obj)}>X</button> </span>
+                                //     </p>
+
+
                             ))
                         }
                     </div>
