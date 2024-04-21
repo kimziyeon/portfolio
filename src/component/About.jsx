@@ -81,14 +81,14 @@ function About({ menuRef, menuclick }) {
                             <div>Sass</div>
                             <div>Java<br />script</div>
                             <div>Type<br />script</div>
-                            <div>React</div>
+                            <div>React.js</div>
                             <div>Next.js</div>
-                            <div>Vue.js</div>
-                            <div>Server</div>
                             <div>GitHub</div>
+                            <div>Velcel</div>
                             <div>Notion</div>
                             <div>Figma</div>
-                            <div>+</div>
+                            <div>MongoDB</div>
+                            <div>MySQL</div>
                             <div>+</div>
                             <div>+</div>
                             <div>+</div>
