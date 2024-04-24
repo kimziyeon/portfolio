@@ -11,7 +11,7 @@ function Home({ menuclick, menuRef }) {
                 <div className='h_left'>
                     <p className='title'>
                         WEB -<br />
-                        PUBLISHER
+                        DEVELOPER
 
                     </p>
                     <p className='title_sub'>
