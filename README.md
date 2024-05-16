@@ -1,6 +1,9 @@
 # 김지연 포트폴리오
 <p> 👤 Personal Project</p>
 <p> 🗓️ 2024.03 ~ 업데이트중</p>
+<p>
+  🔗 <a href="https://kimziyeon-portfolio.vercel.app/" target="_blank" > https://kimziyeon-portfolio.vercel.app/</a>
+</p>
 
 <p>
 React기반으로 각 페이지를 컴포넌트화 하여 구성하고, 페이지 이동을 위해 스크롤 메소드를 사용해 동적처리하였습니다.<br/>
