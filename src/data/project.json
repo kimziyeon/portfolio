@@ -16,7 +16,7 @@
             "id": 1,
             "title": "Memo-Rit [메모릿]",
             "subtitle": "MOBILE WEB [PC, MOB, TAB]",
-            "detail": "기억과 기록, 중요한 내용을 기억하고 기록하기 위한 프로젝트로 My SQL을 이용한 CRUD 데이터 연결, FireBase 스토리지로 이미지 첨부/삭제기능을 적용하고, 오늘의 날짜를 제공하고 현재와 과거를 나눈 투두리스트를 완성하였습니다.",
+            "detail": "기억과 기록, 현재를 기억하고 기록하기 위한 프로젝트로 My SQL을 이용한 CRUD 데이터 연결, FireBase 스토리지로 이미지 첨부/삭제기능을 적용하고, 오늘의 날짜를 제공하고 현재와 과거를 나눈 투두리스트를 완성하였습니다.",
             "work": "메모 / 투두리스트",
             "stack": "Next.js / TypeScript / MySQL / Sass",
             "gitUrl": "https://github.com/kimziyeon/memorit.git",
