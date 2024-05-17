@@ -527,18 +527,29 @@
             gap: 200px;
 
             .p_left_content1 {
-                span {
+                >span {
                     color: #A0A0A0;
                     padding-left: 5px;
                 }
 
-                h3 {
-                    font-size: 2rem;
-                    font-weight: normal;
-                    margin: 5px 0 30px;
+                .contents_title {
+                    @include flexbox(s);
+                    align-items: baseline;
+
+                    >h3 {
+                        font-size: 2rem;
+                        font-weight: normal;
+                        margin: 5px 0 30px;
+                    }
+
+                    >h4 {
+                        margin-left: 15px;
+                        font-weight: normal;
+                    }
+
                 }
 
-                p {
+                >p {
                     font-size: 0.8rem;
                 }
 

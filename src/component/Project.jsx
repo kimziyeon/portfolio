@@ -22,7 +22,10 @@ function Project({ data, menuRef, menuclick }) {
                     <div className='p_left'>
                         <div className='p_left_content1'>
                             <span>{item.subtitle}</span>
-                            <h3>{item.title}</h3>
+                            <div className='contents_title'>
+                                <h3>{item.title}</h3>
+                                <h4>{item.person}</h4>
+                            </div>
                             <p>{item.detail}</p>
                         </div>
 

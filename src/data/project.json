@@ -10,7 +10,8 @@
             "gitUrl": "https://github.com/kimziyeon/portfolio.git",
             "webUrl": "https://kimziyeon-portfolio.vercel.app/",
             "img01": "/img/project/portfolio_768.png",
-            "img02": "/img/project/portfolio_768_h.png"
+            "img02": "/img/project/portfolio_768_h.png",
+            "person": "1P"
         },
         {
             "id": 1,
@@ -22,7 +23,8 @@
             "gitUrl": "https://github.com/kimziyeon/memorit.git",
             "webUrl": "https://memorit-jiyeon.vercel.app/",
             "img01": "/img/project/memorit_768.png",
-            "img02": "/img/project/memorit_768_h.png"
+            "img02": "/img/project/memorit_768_h.png",
+            "person": "1P"
         },
         {
             "id": 2,
@@ -34,7 +36,8 @@
             "gitUrl": "https://github.com/kimziyeon/choding.git",
             "webUrl": "https://choding-jiyeon.vercel.app/",
             "img01": "/img/project/choding_768.png",
-            "img02": "/img/project/choding_768.png"
+            "img02": "/img/project/choding_768.png",
+            "person": "3P"
         },
         {
             "id": 3,
@@ -46,7 +49,8 @@
             "gitUrl": "https://github.com/kimziyeon/hit_seoul.git",
             "webUrl": "https://kimziyeon.github.io/hit_seoul/",
             "img01": "/img/project/seoul_768.png",
-            "img02": "/img/project/seoul_768.png"
+            "img02": "/img/project/seoul_768.png",
+            "person": "4P"
         },
         {
             "id": 4,
@@ -58,7 +62,8 @@
             "gitUrl": "https://github.com/kimziyeon/nike_women.git",
             "webUrl": "https://kimziyeon.github.io/nike_women/",
             "img01": "/img/project/nikewomen_768.png",
-            "img02": "/img/project/nikewomen_768_h.png"
+            "img02": "/img/project/nikewomen_768_h.png",
+            "person": "1P"
         }
     ]
 }
