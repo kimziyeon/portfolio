@@ -86,11 +86,11 @@ function About({ menuRef, menuclick }) {
                             <div>GitHub</div>
                             <div>Velcel</div>
                             <div>Notion</div>
-                            <div>Figma</div>
                             <div>MongoDB</div>
                             <div>MySQL</div>
-                            <div>+</div>
-                            <div>+</div>
+                            <div>Figma</div>
+                            <div>Adobe<br />photoshop</div>
+                            <div>Adobe<br />illustrator</div>
                             <div>+</div>
                         </div>
                     </div>
