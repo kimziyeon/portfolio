@@ -2,7 +2,7 @@
 <p> 👤 Personal Project</p>
 <p> 🗓️ 2024.03 ~ 업데이트중</p>
 <p>
-  🔗 <a href="https://kimziyeon-portfolio.vercel.app/" target="_blank" > https://kimziyeon-portfolio.vercel.app/</a>
+  🔗 <a href="https://kimziyeon-portfolio.vercel.app/" target="_blank" >배포 링크 바로가기</a>
 </p>
 
 <p>
