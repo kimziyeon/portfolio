@@ -720,7 +720,12 @@
 @include responsive(l) {
     .about2 {
         .about_main {
-            .title {}
+            .title {
+                // br {
+                //     display: none !important;
+                // }
+
+            }
         }
     }
 }
@@ -729,6 +734,11 @@
     .about2 {
         .about_main {
             .title {}
+
+            .profile {
+                grid-template-columns: 40% 60%;
+
+            }
 
             .link {
                 >a {

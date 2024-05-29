@@ -45,8 +45,8 @@ function About2({ data, mouseHandle }) {
 
                 <article className='about_main' onMouseMove={mouseHandle}>
                     <div className='title'>
-                        <b>감각적인</b> 센스 한 스푼을 담아<br />
-                        <ToggleBtn setToggleIf={setToggleIf} /><b> 사용하기 쉬운</b> UI / UX를 개발하고<br />
+                        <b>감각적인</b> 센스 한 스푼을 담아 <br />
+                        <ToggleBtn setToggleIf={setToggleIf} /><b> 사용하기 쉬운</b> UI / UX를 개발하고 <br />
                         끊임없이 <b>추구하고</b> 성장하는<br />
                         &lt; &emsp;&#47; &gt; 웹 개발자 <b>김지연</b>입니다.
                     </div>
