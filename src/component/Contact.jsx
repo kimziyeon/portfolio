@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 
 
-function Contact(props) {
+function Contact({ mouseHandle }) {
 
 
     const { data, getData, status, postData, deleteData } = useStore();
@@ -62,7 +62,7 @@ function Contact(props) {
                 y: { duration: 1 },
             }}
         >
-            <article className='c_main'>
+            <article className='c_main' onMouseMove={mouseHandle}>
 
                 <div className='c_left'>
                     <div className='msg_chat'>
@@ -95,7 +95,7 @@ function Contact(props) {
                     <div className='msg_write'>
                         <div className='msg_btn'>
                             <a href="./resume_kimjiyeon.pdf" target="_blank">
-                                <button><img src={resume} alt="github" /></button>
+                                <button><img src={resume} alt="resume" /></button>
                             </a>
                             <a href="https://github.com/kimziyeon" target="_blank">
                                 <button><img src={github} alt="github" /></button>

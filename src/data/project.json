@@ -1,4 +1,24 @@
 {
+    "about": [
+        {
+            "id": 0,
+            "title": "Resume",
+            "subtitle": "이력서 다운로드",
+            "link": "./resume_kimjiyeon.pdf"
+        },
+        {
+            "id": 1,
+            "title": "Git Hub",
+            "subtitle": "깃허브로 이동",
+            "link": "https://github.com/kimziyeon"
+        },
+        {
+            "id": 2,
+            "title": "Velog",
+            "subtitle": "벨로그로 이동",
+            "link": "https://velog.io/@aa40254037"
+        }
+    ],
     "project": [
         {
             "id": 0,

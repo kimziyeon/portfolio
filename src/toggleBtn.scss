@@ -1,0 +1,31 @@
+.toggle {
+    display: inline-block;
+    vertical-align: middle;
+
+    position: relative;
+
+    .toggleContainer {
+        width: 80px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: #8b8b8b;
+        transition: 0.5s;
+
+    }
+
+    .toggleCircle {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(20%, -50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        transition: 0.5s;
+    }
+
+    .active {
+        left: 37px;
+    }
+}

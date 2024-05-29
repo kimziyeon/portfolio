@@ -52,6 +52,38 @@
     //main main main main main main
 
     main {
+        .circle {
+            background-color: rgb(5, 127, 254, 0.5);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.2s ease-out;
+            z-index: 50;
+
+            @include responsive(xl) {
+                display: none
+            }
+        }
+
+        .circle2 {
+            background-color: rgb(160, 160, 160, 0.5);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            transition: all 0.5s ease-out;
+            z-index: 50;
+
+            @include responsive(xl) {
+                display: none;
+            }
+        }
+
         .home {
             .h_main {
                 @include flexbox(sb);
@@ -274,7 +306,7 @@
 
 
 
-//about about about about about
+//about about about about about about about about about
 
 .about {
     .a_main {
@@ -512,6 +544,204 @@
     }
 }
 
+//about2 about2 about2 about2 about2 about2 2222222222222222222
+
+.about2 {
+    .about_main {
+        padding-top: 7%;
+
+        display: grid;
+        grid-template-columns: 45% 15% 40%;
+
+        grid-template-areas:
+            'a.b'
+            'c.b';
+
+        grid-template-rows: auto;
+        box-sizing: content-box;
+
+        >div:nth-of-type(1) {
+            grid-area: a;
+        }
+
+        >div:nth-of-type(2) {
+            grid-area: b;
+        }
+
+        >div:nth-of-type(3) {
+            grid-area: c;
+        }
+
+        .title {
+            font-size: 1.7rem;
+            line-height: 2.2rem;
+            margin: 0 0 40% 5%;
+        }
+
+        .profile {
+            display: grid;
+            box-sizing: content-box;
+            grid-template-columns: 30% 70%;
+            grid-row-gap: 15px;
+            grid-template-areas:
+                'a aa'
+                'b bb'
+                'c cc'
+                'd dd';
+
+            h4:nth-of-type(1) {
+                grid-area: a;
+            }
+
+            h4:nth-of-type(2) {
+                grid-area: b;
+            }
+
+            h4:nth-of-type(3) {
+                grid-area: c;
+            }
+
+            h4:nth-of-type(4) {
+                grid-area: d;
+            }
+
+            .a_about {
+                grid-area: aa;
+            }
+
+            .a_skill {
+                grid-area: bb;
+                @include flexbox();
+                gap: 30px;
+            }
+
+            .a_edu {
+                grid-area: cc;
+            }
+
+            .a_exp {
+                grid-area: dd;
+            }
+
+
+            .a_about,
+            .a_skill,
+            .a_edu,
+            .a_exp {
+                div {
+                    margin-bottom: 13px;
+
+                    p {
+                        font-size: 0.9rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+
+
+        }
+
+        .link {
+            >a {
+                @include flexbox(sb, c);
+                width: 100%;
+                height: 60px;
+                padding: 0 40px;
+
+
+                .link_title {
+                    @include flexbox();
+                    align-items: center;
+
+
+                    b {}
+
+                    p {
+                        font-size: 0.9rem;
+                        margin-left: 20px;
+                    }
+                }
+
+                >p {
+                    img {
+                        width: 70%;
+                    }
+                }
+
+            }
+
+            >a:hover {
+                background-color: #057FFE;
+                color: #fff;
+                border-radius: 10px;
+                border: none;
+            }
+
+        }
+    }
+
+    @include responsive(xxl) {
+        .about_main {
+            grid-template-columns: 45% 5% 50%;
+
+            .title {
+                font-size: 1.6rem;
+                line-height: 2rem;
+                margin: 0 0 8% 0;
+            }
+        }
+    }
+}
+
+@include responsive(xl) {
+    .about2 {
+        padding: 0 3%;
+
+        .about_main {
+            display: block;
+
+            .title {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+            }
+
+            .profile {
+                margin: 0 0 7% 0;
+
+            }
+
+            .link {
+                >a {}
+            }
+        }
+    }
+}
+
+@include responsive(l) {
+    .about2 {
+        .about_main {
+            .title {}
+        }
+    }
+}
+
+@include responsive(m) {
+    .about2 {
+        .about_main {
+            .title {}
+
+            .link {
+                >a {
+                    background-color: #057FFE;
+                    color: #fff;
+                    border-radius: 10px;
+                    border: none;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
 
 
 //project project project project project project

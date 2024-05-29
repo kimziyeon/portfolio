@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import itsme from '../img/aa.gif';
 import scroll from '../scrolldown.svg';
 
-function Home({ menuclick, menuRef }) {
+function Home({ menuclick, menuRef, mouseHandle }) {
 
     return (
         <>
-            <article className='h_main'>
+            <article className='h_main' onMouseMove={mouseHandle}>
                 <div className='h_left'>
                     <p className='title'>
                         WEB -<br />

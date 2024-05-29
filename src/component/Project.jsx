@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import scroll from '../scrolldown.svg';
 import { motion } from 'framer-motion';
 
-function Project({ data, menuRef, menuclick }) {
+function Project({ data, menuRef, menuclick, mouseHandle }) {
     // console.log(data)
 
     const renderProjects = () => {
@@ -18,7 +18,7 @@ function Project({ data, menuRef, menuclick }) {
                     y: { duration: 1 },
                 }}
             >
-                <article className='p_main' key={item.id} >
+                <article className='p_main' key={item.id} onMouseMove={mouseHandle}>
                     <div className='p_left'>
                         <div className='p_left_content1'>
                             <span>{item.subtitle}</span>
