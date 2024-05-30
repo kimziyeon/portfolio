@@ -9,15 +9,11 @@ import left from '../img/arrowLeftGrayDark.svg';
 import { motion } from 'framer-motion';
 
 
-
-
-
-function Contact({ mouseHandle }) {
+function Contact({ mouseHandle, bigCircle, smallCircle }) {
 
 
     const { data, getData, status, postData, deleteData } = useStore();
     const elInput = useRef();
-
 
     const onSaveHandler = (e) => {
         e.preventDefault();
@@ -92,8 +88,8 @@ function Contact({ mouseHandle }) {
                         }
                     </div>
 
-                    <div className='msg_write'>
-                        <div className='msg_btn'>
+                    <div className='msg_write' onMouseOver={bigCircle} onMouseLeave={smallCircle}>
+                        <div className='msg_btn' >
                             <a href="./resume_kimjiyeon.pdf" target="_blank">
                                 <button><img src={resume} alt="resume" /></button>
                             </a>

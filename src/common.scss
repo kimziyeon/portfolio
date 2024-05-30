@@ -24,6 +24,7 @@
 
             a:hover {
                 color: #A0A0A0;
+                transition: 0.5s;
             }
         }
 
@@ -53,10 +54,11 @@
 
     main {
         .circle {
-            background-color: rgb(5, 127, 254, 0.5);
+            background-color: rgb(255, 255, 255, 0%);
             width: 30px;
             height: 30px;
             border-radius: 50%;
+            border: 1px solid #A0A0A0;
             position: absolute;
             top: 0;
             left: 0;
@@ -66,23 +68,14 @@
             @include responsive(xl) {
                 display: none
             }
-        }
 
-        .circle2 {
-            background-color: rgb(160, 160, 160, 0.5);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            transition: all 0.5s ease-out;
-            z-index: 50;
-
-            @include responsive(xl) {
-                display: none;
+            &.Big {
+                width: 60px;
+                height: 60px;
             }
         }
+
+
 
         .home {
             .h_main {

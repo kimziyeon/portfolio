@@ -23,7 +23,7 @@ const RenderLink = ({ item }) => {
 }
 
 
-function About2({ data, mouseHandle }) {
+function About2({ data, mouseHandle, bigCircle, smallCircle }) {
 
     let [toggleIf, setToggleIf] = useState();
     // console.log(data)
@@ -107,7 +107,7 @@ function About2({ data, mouseHandle }) {
                         </div>
                     </div>
 
-                    <div className='link'>
+                    <div className='link' onMouseOver={bigCircle} onMouseLeave={smallCircle}>
                         {data.about.map((item) => (
                             <RenderLink key={item.id} item={item} />
                         ))

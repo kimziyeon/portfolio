@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import scroll from '../scrolldown.svg';
 import { motion } from 'framer-motion';
 
-function Project({ data, menuRef, menuclick, mouseHandle }) {
+function Project({ data, menuRef, menuclick, mouseHandle, bigCircle, smallCircle }) {
     // console.log(data)
+
 
     const renderProjects = () => {
         return data.project.map((item) => (
@@ -31,7 +32,7 @@ function Project({ data, menuRef, menuclick, mouseHandle }) {
                         </div>
 
                         <div className='p_left_content2'>
-                            <div className='content_icon'>
+                            <div className='content_icon' onMouseOver={bigCircle} onMouseLeave={smallCircle}>
                                 <a href={item.gitUrl} target="_blank"><img src="/img/git_icon_blue.png" alt="github" /></a>
                                 <a href={item.webUrl} target="_blank"><img src="/img/link_icon_blue.png" alt="link" /></a>
                             </div>
@@ -46,7 +47,7 @@ function Project({ data, menuRef, menuclick, mouseHandle }) {
                         </div>
                     </div>
 
-                    <div className='p_right'>
+                    <div className='p_right' onMouseOver={bigCircle} onMouseLeave={smallCircle}>
                         <a href={item.webUrl} target="_blank">
                             <div className='p_mockup_w' target="_blank">
                                 <p className='ipadW'>
