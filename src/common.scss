@@ -1282,8 +1282,6 @@
 
                 .call {
                     font-size: 20px;
-                    margin-top: 5%;
-
                 }
             }
         }
@@ -1306,14 +1304,17 @@
             }
 
             .c_right {
-                margin: 20% 0;
+                margin: 20% 0 5%;
                 border: none;
 
                 h3 {
                     font-size: 50px;
                 }
 
-                .call {}
+                .call {
+                    margin-top: 5%;
+
+                }
             }
         }
     }
@@ -1322,7 +1323,7 @@
 
     @include responsive(m) {
         .c_main {
-            padding: 15% 2%;
+            padding: 15% 2% 10%;
 
             .c_left {
                 padding: 0;
