@@ -27,7 +27,7 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
 
     let [toggleIf, setToggleIf] = useState();
     // console.log(data)
-    // console.log(toggleIf) toggle컴포넌트로 setToggleIf보내서 값 다시받아옴
+    // console.log(toggleIf)
     // console.log(mouseHandle, 'dd')
 
     return (
@@ -45,13 +45,17 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
 
                 <article className='about_main' onMouseMove={mouseHandle}>
                     <div className='title'>
-                        <b>감각적인</b> 센스 한 스푼을 담아 <br />
-                        <ToggleBtn setToggleIf={setToggleIf} /><b> 사용하기 쉬운</b> UI / UX를 개발하고 <br />
-                        끊임없이 <b>추구하고</b> 성장하는<br />
-                        &lt; &emsp;&#47; &gt; 웹 개발자 <b>김지연</b>입니다.
+                        <p>
+                            <b>감각적인</b> 센스 한 스푼을 담아
+                        </p>
+                        <p>
+                            <ToggleBtn setToggleIf={setToggleIf} /><b> 사용하기 쉬운</b> UI / UX를 개발하고 <br />
+                            끊임없이 <b>추구하고</b> 성장하는 <br />
+                            웹 개발자 <b>김지연</b>입니다.
+                        </p>
                     </div>
 
-                    <div className='profile'>
+                    <div className={toggleIf ? 'profile off' : 'profile'}>
                         <h4>About</h4>
                         <h4>Skill</h4>
                         <h4>Education</h4>
@@ -115,7 +119,7 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
                         }
                     </div>
                 </article>
-            </motion.div>
+            </motion.div >
 
         </>
     )

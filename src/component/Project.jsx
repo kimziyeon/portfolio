@@ -11,6 +11,7 @@ function Project({ data, menuRef, menuclick, mouseHandle, bigCircle, smallCircle
         return data.project.map((item) => (
 
             <motion.div
+                key={item.id}
                 initial={{ opacity: 0, y: 70 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}

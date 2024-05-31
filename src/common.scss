@@ -541,7 +541,7 @@
 
 .about2 {
     .about_main {
-        padding-top: 7%;
+        padding-top: 8%;
 
         display: grid;
         grid-template-columns: 45% 15% 40%;
@@ -572,6 +572,8 @@
         }
 
         .profile {
+            opacity: 1;
+            transition: .3s ease-out;
             display: grid;
             box-sizing: content-box;
             grid-template-columns: 30% 70%;
@@ -630,8 +632,11 @@
                     }
                 }
             }
+        }
 
-
+        .profile.off {
+            opacity: 0;
+            transform: translateX(80%);
         }
 
         .link {
@@ -696,11 +701,19 @@
             .title {
                 font-size: 1.4rem;
                 line-height: 1.8rem;
+
+                br {
+                    display: none;
+                }
             }
 
             .profile {
                 margin: 0 0 7% 0;
 
+            }
+
+            .profile.off {
+                display: none;
             }
 
             .link {
@@ -713,12 +726,7 @@
 @include responsive(l) {
     .about2 {
         .about_main {
-            .title {
-                // br {
-                //     display: none !important;
-                // }
-
-            }
+            .title {}
         }
     }
 }
@@ -730,6 +738,8 @@
 
             .profile {
                 grid-template-columns: 40% 60%;
+
+                .title {}
 
             }
 
