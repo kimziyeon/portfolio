@@ -586,6 +586,7 @@
             font-size: 1.7rem;
             line-height: 2.2rem;
             margin: 0 0 0 5%;
+            word-break: keep-all;
 
         }
 
@@ -1011,7 +1012,7 @@
                     }
 
                     h3 {
-                        font-size: 1.7rem;
+                        font-size: 1.5rem;
                         font-weight: bold;
                         margin: 5px 0 12px;
                     }
