@@ -100,6 +100,8 @@
                     }
 
                     .title_sub {
+                        width: 100%;
+
                         span {
                             display: block;
                             margin: 0 0 20px 10px;
@@ -249,6 +251,7 @@
                     display: block;
                     border-top: none;
 
+
                     .h_left {
                         border: none;
                         padding-top: 20px;
@@ -257,10 +260,13 @@
                             border: none;
                             font-size: 15vw;
                         }
+
+                        .title_sub {}
                     }
 
                     .h_right {
                         max-height: 60vh;
+                        justify-content: center;
 
                         .bubble1,
                         .bubble2 {
@@ -284,6 +290,20 @@
                         .title {
                             font-size: 22vw;
                         }
+
+                        .title_sub {
+                            span {
+                                margin: 0 0 0 10px;
+                            }
+                        }
+                    }
+
+                    .h_right {
+
+                        // transform: scale(0.9);
+                        // .bubble2 {
+                        //     display: none;
+                        // }
                     }
                 }
             }
