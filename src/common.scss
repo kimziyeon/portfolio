@@ -1011,10 +1011,11 @@
                         font-size: 1rem;
                     }
 
-                    h3 {
-                        font-size: 1.5rem;
-                        font-weight: bold;
-                        margin: 5px 0 12px;
+                    .contents_title {
+                        h3 {
+                            font-size: 1.7rem;
+                            margin: 5px 0 12px;
+                        }
                     }
                 }
 
@@ -1037,6 +1038,20 @@
                         top: 10%;
                         left: 15%;
 
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(s) {
+        .p_main {
+            .p_left {
+                .p_left_content1 {
+                    .contents_title {
+                        h3 {
+                            font-size: 1.5rem;
+                        }
                     }
                 }
             }
