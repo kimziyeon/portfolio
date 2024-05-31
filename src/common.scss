@@ -1282,6 +1282,8 @@
 
                 .call {
                     font-size: 20px;
+                    margin-top: 5%;
+
                 }
             }
         }
@@ -1311,9 +1313,7 @@
                     font-size: 50px;
                 }
 
-                .call {
-                    font-size: 30px;
-                }
+                .call {}
             }
         }
     }
@@ -1377,9 +1377,7 @@
                     font-size: 40px;
                 }
 
-                .call {
-                    font-size: 25px;
-                }
+                .call {}
             }
         }
     }
@@ -1396,4 +1394,9 @@
 
     }
 
+    @include responsive(xl) {
+        .c_title_sub {
+            display: none;
+        }
+    }
 }
