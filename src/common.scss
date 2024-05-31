@@ -100,10 +100,9 @@
                     }
 
                     .title_sub {
-                        width: 100%;
-
-                        span {
+                        .copy2024 {
                             display: block;
+                            white-space: nowrap;
                             margin: 0 0 20px 10px;
                         }
                     }
@@ -292,9 +291,7 @@
                         }
 
                         .title_sub {
-                            span {
-                                margin: 0 0 0 10px;
-                            }
+                            .copy2024 {}
                         }
                     }
 
@@ -561,7 +558,7 @@
 
 .about2 {
     .about_main {
-        padding-top: 8%;
+        padding-top: 7%;
 
         display: grid;
         grid-template-columns: 45% 15% 40%;
@@ -588,7 +585,8 @@
         .title {
             font-size: 1.7rem;
             line-height: 2.2rem;
-            margin: 0 0 40% 5%;
+            margin: 0 0 0 5%;
+
         }
 
         .profile {
@@ -754,13 +752,12 @@
 @include responsive(m) {
     .about2 {
         .about_main {
-            .title {}
+            .title {
+                padding: 20px 0;
+            }
 
             .profile {
                 grid-template-columns: 40% 60%;
-
-                .title {}
-
             }
 
             .link {
