@@ -14,9 +14,9 @@ function Home({ menuclick, menuRef, mouseHandle }) {
                         DEVELOPER
 
                     </p>
-                    <p className='title_sub'>
-                        <div className='copy2024'>Jiyeon portfolio &copy; 2024</div>
-                    </p>
+                    <div className='title_sub'>
+                        <p className='copy2024'>Jiyeon portfolio &copy; 2024</p>
+                    </div>
                 </div>
 
                 <div className='h_right'>
