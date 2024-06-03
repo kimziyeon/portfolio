@@ -588,6 +588,10 @@
             margin: 0 0 40% 5%;
             word-break: keep-all;
 
+            .toggle {
+                cursor: pointer;
+            }
+
         }
 
         .profile {
