@@ -90,9 +90,6 @@ function Contact({ mouseHandle, bigCircle, smallCircle }) {
 
                     <div className='msg_write' onMouseOver={bigCircle} onMouseLeave={smallCircle}>
                         <div className='msg_btn' >
-                            <a href="./resume_kimjiyeon.pdf" target="_blank">
-                                <button><img src={resume} alt="resume" /></button>
-                            </a>
                             <a href="https://github.com/kimziyeon" target="_blank">
                                 <button><img src={github} alt="github" /></button>
                             </a>
