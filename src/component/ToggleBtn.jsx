@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 function ToggleBtn({ setToggleIf }) {
 
-    let [isOn, setIsOn] = useState(true);
+    let [isOn, setIsOn] = useState(false);
 
     const toggleOn = () => {
         // console.log(isOn, 'click')

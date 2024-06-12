@@ -19,6 +19,98 @@
             "link": "https://velog.io/@aa40254037"
         }
     ],
+    "skill": [
+        {
+            "id": 0,
+            "name": "github",
+            "srcColor": "/img/skill/color/github.png",
+            "srcGray": "/img/skill/gray/github.png"
+        },
+        {
+            "id": 1,
+            "name": "next.js",
+            "srcColor": "/img/skill/color/next.png",
+            "srcGray": "/img/skill/gray/next.png"
+        },
+        {
+            "id": 2,
+            "name": "mongoDB",
+            "srcColor": "/img/skill/color/mongoDB.png",
+            "srcGray": "/img/skill/gray/mongoDB.png"
+        },
+        {
+            "id": 3,
+            "name": "mySQL",
+            "srcColor": "/img/skill/color/mySQL.png",
+            "srcGray": "/img/skill/gray/mySQL.png"
+        },
+        {
+            "id": 4,
+            "name": "vercel",
+            "srcColor": "/img/skill/color/vercel.png",
+            "srcGray": "/img/skill/gray/vercel.png"
+        },
+        {
+            "id": 5,
+            "name": "html5",
+            "srcColor": "/img/skill/color/html.png",
+            "srcGray": "/img/skill/gray/html.png"
+        },
+        {
+            "id": 6,
+            "name": "java Script",
+            "srcColor": "/img/skill/color/js.png",
+            "srcGray": "/img/skill/gray/js.png"
+        },
+        {
+            "id": 7,
+            "name": "type Script",
+            "srcColor": "/img/skill/color/ts.png",
+            "srcGray": "/img/skill/gray/ts.png"
+        },
+        {
+            "id": 8,
+            "name": "react.js",
+            "srcColor": "/img/skill/color/react.png",
+            "srcGray": "/img/skill/gray/react.png"
+        },
+        {
+            "id": 9,
+            "name": "adobe Photoshop",
+            "srcColor": "/img/skill/color/ps.png",
+            "srcGray": "/img/skill/gray/ps.png"
+        },
+        {
+            "id": 10,
+            "name": "adobe Illustrator",
+            "srcColor": "/img/skill/color/ai.png",
+            "srcGray": "/img/skill/gray/ai.png"
+        },
+        {
+            "id": 11,
+            "name": "figma",
+            "srcColor": "/img/skill/color/figma.png",
+            "srcGray": "/img/skill/gray/figma.png"
+        },
+        {
+            "id": 12,
+            "name": "css",
+            "srcColor": "/img/skill/color/css.png",
+            "srcGray": "/img/skill/gray/css.png"
+        },
+        {
+            "id": 13,
+            "name": "sass",
+            "srcColor": "/img/skill/color/sass.png",
+            "srcGray": "/img/skill/gray/sass.png"
+        },
+        {
+            "id": 14,
+            "name": "notion",
+            "srcColor": "/img/skill/color/notion.png",
+            "srcGray": "/img/skill/gray/notion.png"
+        }
+    ],
     "project": [
         {
             "id": 0,

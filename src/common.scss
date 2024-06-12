@@ -557,50 +557,46 @@
 //about2 about2 about2 about2 about2 about2 2222222222222222222
 
 .about2 {
+    position: relative;
+
     .about_main {
         padding-top: 7%;
-
-        display: grid;
-        grid-template-columns: 45% 15% 40%;
-
-        grid-template-areas:
-            'a.b'
-            'c.b';
-
-        grid-template-rows: auto;
-        box-sizing: content-box;
-
-        >div:nth-of-type(1) {
-            grid-area: a;
-        }
-
-        >div:nth-of-type(2) {
-            grid-area: b;
-        }
-
-        >div:nth-of-type(3) {
-            grid-area: c;
-        }
+        display: flex;
+        justify-content: space-between;
 
         .title {
             font-size: 1.7rem;
             line-height: 2.2rem;
-            margin: 0 0 40% 5%;
+            margin-left: 3%;
             word-break: keep-all;
+
+            p {
+                span {
+                    transition: 0.5s ease-in-out;
+                }
+            }
 
             .toggle {
                 cursor: pointer;
             }
 
+            &.effect {
+                p {
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
         }
 
+
         .profile {
-            opacity: 1;
-            transition: .3s ease-out;
+            transition: 0.5s;
+            margin-right: 10%;
             display: grid;
             box-sizing: content-box;
             grid-template-columns: 30% 70%;
-            grid-row-gap: 15px;
+            grid-gap: 15px 30px;
             grid-template-areas:
                 'a aa'
                 'b bb'
@@ -655,14 +651,155 @@
                     }
                 }
             }
+
+            &.off {
+                opacity: 0;
+            }
+
         }
 
-        .profile.off {
-            opacity: 0;
-            transform: translateX(80%);
+        .photoGrid {
+            transition: 0.5s;
+            position: absolute;
+            transform: translate(50%, -50%);
+            top: 52%;
+            left: 36%;
+
+            width: 500px;
+            display: grid;
+            box-sizing: content-box;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 6px;
+
+            grid-template-areas:
+                '. area2 area3 area0 area4'
+                '. area1 area8 p1 p1'
+                '. area6 area7 p1 p1'
+                'area5 p2 p2 p1 p1'
+                'area12 p2 p2 area9 area10'
+                'area13 p2 p2 area11 area14';
+
+            .skillBox {
+                position: relative;
+                width: 100px;
+                min-height: 90px;
+                background-color: #F2F2F2;
+                border-radius: 10px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .skillColor {
+                    position: absolute;
+                    width: 50px;
+                    transition: 0.4s;
+                    opacity: 0.5;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .skillBox:hover {
+                .skillColor {
+                    opacity: 1;
+
+                }
+            }
+
+            .skillBox[style*="area0"] {
+                grid-area: area0;
+            }
+
+            .skillBox[style*="area1"] {
+                grid-area: area1;
+            }
+
+            .skillBox[style*="area2"] {
+                grid-area: area2;
+            }
+
+            .skillBox[style*="area3"] {
+                grid-area: area3;
+            }
+
+            .skillBox[style*="area4"] {
+                grid-area: area4;
+            }
+
+            .skillBox[style*="area5"] {
+                grid-area: area5;
+            }
+
+            .skillBox[style*="area6"] {
+                grid-area: area6;
+            }
+
+            .skillBox[style*="area7"] {
+                grid-area: area7;
+            }
+
+            .skillBox[style*="area8"] {
+                grid-area: area8;
+            }
+
+            .skillBox[style*="area9"] {
+                grid-area: area9;
+            }
+
+            .skillBox[style*="area10"] {
+                grid-area: area10;
+            }
+
+            .skillBox[style*="area11"] {
+                grid-area: area11;
+            }
+
+            .skillBox[style*="area12"] {
+                grid-area: area12;
+            }
+
+            .skillBox[style*="area13"] {
+                grid-area: area13;
+            }
+
+            .skillBox[style*="area14"] {
+                grid-area: area14;
+            }
+
+            .p1 {
+                grid-area: p1;
+            }
+
+            .p2 {
+                grid-area: p2;
+            }
+
+            .photo1,
+            .photo2 {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            &.off {
+                opacity: 0;
+            }
         }
+
+
 
         .link {
+            position: absolute;
+            top: 550px;
+            width: 45%;
+
             >a {
                 @include flexbox(sb, c);
                 width: 100%;
@@ -701,14 +838,30 @@
         }
     }
 
-    @include responsive(xxl) {
+
+}
+
+@include responsive(xxl) {
+    .about2 {
         .about_main {
-            grid-template-columns: 45% 5% 50%;
+            display: block;
 
             .title {
                 font-size: 1.6rem;
                 line-height: 2.2rem;
                 margin: 0 0 8% 0;
+            }
+
+            .link {
+                position: static;
+                width: 100%;
+                margin-top: 5%;
+            }
+
+            .photoGrid {
+                transform: translate(0, -50%);
+                top: 48%;
+                left: calc(50% - 250px);
             }
         }
     }
@@ -719,8 +872,6 @@
         padding: 0 3%;
 
         .about_main {
-            display: block;
-
             .title {
                 font-size: 1.4rem;
                 line-height: 2rem;
@@ -737,11 +888,6 @@
 
             .profile {
                 margin: 0 0 7% 0;
-
-            }
-
-            .profile.off {
-                display: none;
             }
 
             .link {
@@ -751,13 +897,6 @@
     }
 }
 
-@include responsive(l) {
-    .about2 {
-        .about_main {
-            .title {}
-        }
-    }
-}
 
 @include responsive(m) {
     .about2 {
@@ -778,6 +917,53 @@
                     border: none;
                     margin: 5px 0;
                 }
+            }
+
+            .photoGrid {
+                width: 90%;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 49%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    'area5 area12 area13 area6'
+                    'area2 area3 area0 area4'
+                    'area1 area8 area7 area9'
+                    'area10 area11 area14 .'
+                    'p1 p1 p2 p2';
+
+                .skillBox {
+                    width: 100%;
+                    height: 100%;
+
+                    .skillColor {
+                        width: 50%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@include responsive(s) {
+    .about2 {
+        .about_main {
+            .profile {
+                grid-template-columns: 30% 70%;
+            }
+
+            .photoGrid {
+                top: 52%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    'area5 area12 area13'
+                    'area6 area2 area3'
+                    'area0 area4 area1'
+                    'area8 area7 area9'
+                    'area10 area11 area14'
+                    'p1p2 .';
             }
         }
     }

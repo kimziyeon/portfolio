@@ -3,6 +3,8 @@ import arrowBlue from '../img/arrowBlue.png';
 import arrowWhite from '../img/arrowWhite.png';
 import ToggleBtn from './ToggleBtn';
 import { motion } from 'framer-motion';
+import myPhoto1 from '../img/photo1.jpg';
+import myPhoto2 from '../img/photo2.jpg';
 
 
 const RenderLink = ({ item }) => {
@@ -44,18 +46,18 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
             >
 
                 <article className='about_main' onMouseMove={mouseHandle}>
-                    <div className='title'>
+                    <div className={toggleIf === false ? 'title effect' : 'title'}>
                         <p>
-                            <b>감각적인</b> 센스 한 스푼을 담아
+                            <span>감각적인</span> 센스 한 스푼을 담아
                         </p>
                         <p>
-                            <ToggleBtn setToggleIf={setToggleIf} className='toggle' /><b> 사용하기 쉬운</b> UI / UX를 개발하고 <br />
-                            끊임없이 <b>추구하고</b> 성장하는 <br />
-                            웹 개발자 <b>김지연</b>입니다.
+                            <ToggleBtn setToggleIf={setToggleIf} className='toggle' /><span> 사용하기 쉬운</span> UI / UX를 개발하고 <br />
+                            끊임없이 추구하고 <span> 성장하는</span> <br />
+                            웹 개발자 <span>김지연</span>입니다.
                         </p>
                     </div>
 
-                    <div className={toggleIf ? 'profile off' : 'profile'}>
+                    <div className={toggleIf === false ? 'profile off' : 'profile'}>
                         <h4>About</h4>
                         <h4>Skill</h4>
                         <h4>Education</h4>
@@ -85,8 +87,8 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
                                 <p>MySQL</p>
                                 <p>Notion</p>
                                 <p>Figma</p>
-                                <p>Adobe Photoshop</p>
-                                <p>Adobe illustrator</p>
+                                <p>Photoshop</p>
+                                <p>Illustrator</p>
                             </div>
                         </div>
                         <div className='a_edu'>
@@ -111,14 +113,37 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
                         </div>
                     </div>
 
+                    <div className={toggleIf === false ? 'photoGrid' : 'photoGrid off'} >
+                        {data.skill.map((item, key) => (
+                            <div className='skillBox' key={key} style={{ gridArea: `area${key}` }}>
+                                <p className='skillColor'>
+                                    <img src={item.srcColor} alt="error" />
+                                </p>
+
+                                {/* <p className='skillGray'>
+                                    <img src={item.srcGray} alt="error" />
+                                </p> */}
+                            </div>
+                        )
+                        )}
+
+                        <p className='photo1 p1'>
+                            <img src={myPhoto1} alt="error" />
+                        </p>
+                        <p className='photo2 p2'>
+                            <img src={myPhoto2} alt="error" />
+                        </p>
+                    </div>
+
                     <div className='link' onMouseOver={bigCircle} onMouseLeave={smallCircle}>
                         {data.about.map((item) => (
                             <RenderLink key={item.id} item={item} />
                         ))
-
                         }
                     </div>
+
                 </article>
+
             </motion.div >
 
         </>
