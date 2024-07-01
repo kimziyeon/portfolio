@@ -2,15 +2,15 @@
     "about": [
         {
             "id": 0,
-            "title": "Resume",
-            "subtitle": "이력서 다운로드",
-            "link": "./resume_kimjiyeon.pdf"
+            "title": "GitHub",
+            "subtitle": "깃허브로 이동",
+            "link": "https://joyous-friction-254.notion.site/profile-6c2ff30e5d6a4eaeb50169633e8783f0?pvs=4"
         },
         {
             "id": 1,
-            "title": "Git Hub",
-            "subtitle": "깃허브로 이동",
-            "link": "https://github.com/kimziyeon"
+            "title": "Notion",
+            "subtitle": "노션으로 이동",
+            "link": "./resume_kimjiyeon.pdf"
         },
         {
             "id": 2,

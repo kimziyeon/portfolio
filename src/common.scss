@@ -201,51 +201,8 @@
                 }
             }
 
+
             @include responsive(xxl) {
-                .h_main {
-                    .h_left {
-                        .title {
-                            padding: 20px 10px 10px;
-                        }
-                    }
-
-                    .h_right {
-
-                        .bubble1,
-                        .bubble2 {
-                            margin: 0 120px 0 10px;
-                        }
-
-                        .mimoticon {
-                            margin: 0;
-                        }
-                    }
-                }
-            }
-
-            @include responsive(xl) {
-                .h_main {
-                    margin-top: 7%;
-
-                    .h_right {
-
-                        .bubble1,
-                        .bubble2 {
-                            margin: 0 100px 0 10px;
-
-                            .bubble_txt {
-                                font-size: 18px;
-                            }
-                        }
-
-                        .mimoticon {
-                            width: 220px;
-                        }
-                    }
-                }
-            }
-
-            @include responsive(l) {
                 .h_main {
                     display: block;
                     border-top: none;
@@ -444,6 +401,7 @@
             .a_conts {
                 grid-template-columns: 13% 37% 55%;
             }
+
         }
 
         @include responsive(xxxl) {
@@ -837,8 +795,16 @@
 
         }
     }
+}
 
-
+@include responsive(xxxl) {
+    .about2 {
+        .about_main {
+            .photoGrid {
+                left: 27%;
+            }
+        }
+    }
 }
 
 @include responsive(xxl) {
