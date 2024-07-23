@@ -127,6 +127,19 @@
         },
         {
             "id": 1,
+            "title": "STARBUCKS KOREA",
+            "subtitle": "RESPONSIVE WEB [PC, TAB, MOB]",
+            "detail": "커피를 대표하는 프렌차이즈 스타벅스, 비주얼 이미지 섹션별로 나누어 작업하고 미디어쿼리로 반응형 웹을 구현하였습니다.",
+            "work": "웹사이트 클론",
+            "stack": "Html / Css / Javascript",
+            "gitUrl": "https://github.com/kimziyeon/starbucks",
+            "webUrl": "https://kimziyeon.github.io/starbucks/",
+            "img01": "/img/project/starbucks_768.png",
+            "img02": "/img/project/starbucks_768_h.png",
+            "person": "1P"
+        },
+        {
+            "id": 2,
             "title": "Memo-Rit [메모릿]",
             "subtitle": "MOBILE WEB [PC, MOB, TAB]",
             "detail": "기억과 기록, 현재를 기억하고 기록하기 위한 프로젝트로 My SQL을 이용한 CRUD 데이터 연결, FireBase 스토리지로 이미지 첨부/삭제기능을 적용하고, 오늘의 날짜를 제공하고 현재와 과거를 나눈 투두리스트를 완성하였습니다.",
@@ -139,7 +152,7 @@
             "person": "1P"
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "초보들의 코딩 [초딩]",
             "subtitle": "MOBILE WEB [MOB, TAB]",
             "detail": "누구나 쉽고 편하게 코딩 공부를 할 수 있는 플랫폼 프로젝트로 사용자의 효율적인 정보 탐색을 위한 API검색 기능을 통합하고, CRUD 데이터 연결, STORE로 분리해 회원 데이터에 맞는 레벨 데이터를 출력하고, PWA를 적용해 사용자가 필요로 하고 서로 공유할 수 있는 서비스입니다.",
@@ -152,7 +165,7 @@
             "person": "3P"
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "서울, 마이소울",
             "subtitle": "RESPONSIVE WEB [PC, MOB]",
             "detail": "대한민국을 대표 수도 서울시의 홈페이지를 개선한 프로젝트로 서울시 홍보, 젊은 층의 접근성 향상을 목표로 지나치게 많은 정보들을 덜어내고 '서울' 자체에 집중 개선하였습니다.",
@@ -163,32 +176,6 @@
             "img01": "/img/project/seoul_768.png",
             "img02": "/img/project/seoul_768.png",
             "person": "4P"
-        },
-        {
-            "id": 4,
-            "title": "NIKE WOMEN",
-            "subtitle": "RESPONSIVE WEB [PC, TAB, MOB]",
-            "detail": "스포츠웨어를 대표하는 나이키우먼, 커뮤니티 저널의 일부 페이지를 미디어쿼리로 반응형 클론 코딩하였습니다.",
-            "work": "웹사이트 클론",
-            "stack": "Html / Javascript / Sass",
-            "gitUrl": "https://github.com/kimziyeon/nike_women.git",
-            "webUrl": "https://kimziyeon.github.io/nike_women/",
-            "img01": "/img/project/nikewomen_768.png",
-            "img02": "/img/project/nikewomen_768_h.png",
-            "person": "1P"
-        },
-        {
-            "id": 5,
-            "title": "STARBUCKS KOREA",
-            "subtitle": "RESPONSIVE WEB [PC, TAB, MOB]",
-            "detail": "커피 대표 프렌차이즈 스타벅스, 비주얼 섹션별로 나누어 작업하고 미디어쿼리 반응형 웹을 구현",
-            "work": "웹사이트 클론",
-            "stack": "Html / Css / Javascript",
-            "gitUrl": "https://github.com/kimziyeon/starbucks",
-            "webUrl": "https://kimziyeon.github.io/starbucks/",
-            "img01": "/img/project/starbucks_768.png",
-            "img02": "/img/project/starbucks_768_h.png",
-            "person": "1P"
         }
     ]
 }
