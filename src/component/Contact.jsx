@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useStore } from '../store';
-import resume from '../img/resume.png';
+import notion from '../img/profile.png';
 import github from '../img/github.png';
 import velog from '../img/velog.png';
 import send from '../img/send.png';
@@ -91,13 +91,14 @@ function Contact({ mouseHandle, bigCircle, smallCircle }) {
                     <div className='msg_write' onMouseOver={bigCircle} onMouseLeave={smallCircle}>
                         <div className='msg_btn' >
 
-                            <a href="./resume_kimjiyeon.pdf" target="_blank">
-                                <button><img src={resume} alt="resume" /></button>
-                            </a>
-
                             <a href="https://github.com/kimziyeon" target="_blank">
                                 <button><img src={github} alt="github" /></button>
                             </a>
+
+                            <a href="https://joyous-friction-254.notion.site/profile-6c2ff30e5d6a4eaeb50169633e8783f0?pvs=4" target="_blank">
+                                <button><img src={notion} alt="notion" /></button>
+                            </a>
+
                             <a href="https://velog.io/@aa40254037" target="_blank">
                                 <button><img src={velog} alt="velog" /></button>
                             </a>
