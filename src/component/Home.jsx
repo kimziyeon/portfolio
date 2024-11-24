@@ -12,11 +12,7 @@ function Home({ menuclick, menuRef, mouseHandle }) {
                     <p className='title'>
                         WEB -<br />
                         DEVELOPER
-
                     </p>
-                    <div className='title_sub'>
-                        <p className='copy2024'>Jiyeon portfolio &copy; 2024</p>
-                    </div>
                 </div>
 
                 <div className='h_right'>
@@ -24,7 +20,6 @@ function Home({ menuclick, menuRef, mouseHandle }) {
                     <div className='bubble1'>
                         <div className='bubble_txt'>
                             <h3>Hello !</h3>
-                            {/* <h3>I have a diverse range of code</h3> */}
                         </div>
                     </div>
                     <div className='bubble2'>

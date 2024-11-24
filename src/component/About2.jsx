@@ -47,14 +47,14 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
 
                 <article className='about_main' onMouseMove={mouseHandle}>
                     <div className={toggleIf === false ? 'title effect' : 'title'}>
-                        <p>
+                        <p className='txt_box'>
                             <span>감각적인</span> 센스 한 스푼을 담아
                         </p>
-                        <p>
+                        <div className='txt_box'>
                             <ToggleBtn setToggleIf={setToggleIf} className='toggle' /><span> 사용하기 쉬운</span> UI / UX를 개발하고 <br />
                             끊임없이 추구하고 <span> 성장하는</span> <br />
                             웹 개발자 <span>김지연</span>입니다.
-                        </p>
+                        </div>
                     </div>
 
                     <div className={toggleIf === false ? 'profile off' : 'profile'}>
@@ -73,8 +73,8 @@ function About2({ data, mouseHandle, bigCircle, smallCircle }) {
                         <div className='a_skill'>
                             <div>
                                 <p>Html5</p>
-                                <p>Css</p>
-                                <p>Sass</p>
+                                <p>Css / Sass</p>
+                                <p>jQuery</p>
                                 <p>Java Script</p>
                                 <p>Type Script</p>
                                 <p>React.js</p>
